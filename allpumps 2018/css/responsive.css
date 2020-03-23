@@ -1,0 +1,56 @@
+@media screen and (max-width: 1150px) {
+    .slider__text{
+        font-size: 25px;
+        transform: translateY(-390%) translateX(15%);
+    }
+}
+@media screen and (max-width: 970px) {
+    .header__logo{
+        margin-top: 35px;
+        height: 60px;
+        width: 220px;
+        position: relative;
+        cursor: pointer;
+    }
+    input {
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        min-width: 300px;
+        height: 38px;
+        border-radius: 20px;
+        padding-left: 15px;
+        }
+    .post a{
+        font-size:12px;
+    }
+    .call{
+        margin-top: 4px;
+        font-size:12px;
+        
+    }
+}
+@media screen and (max-width: 890px) {
+    .input {
+        min-width: 200px;
+        }
+    .nav__item{
+        font-size: 12px;
+    }
+    .slider__text{
+        font-size: 20px;
+        transform: translateY(-490%) translateX(15%);
+    }
+    .footer-copy{
+        font-size: 12px;
+    }
+    .footer__contacts{
+        font-size: 14px;
+    }
+    .footer__payer{
+        font-size: 14px;
+    }
+    .footer__us{
+        font-size: 14px;
+    }
+}

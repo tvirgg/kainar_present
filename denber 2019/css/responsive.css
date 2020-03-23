@@ -1,0 +1,161 @@
+@media screen and (max-width: 1360px) {
+    .page_cell{
+        max-width: 90%;
+    }
+    .nav__item{
+        margin-left: 1rem;
+    }
+    .nav__link {
+        font-size:10pt;
+        text-decoration: none;
+        padding: 0.4rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header__text-logo{
+        font-size: 0.9rem;
+    }
+    .nav__item{
+        margin-left: 0.7rem;
+    }
+    .nav__link {
+        font-size:8pt;
+        text-decoration: none;
+        padding: 0.4rem;
+    }
+    .header__button{
+        display:block;
+        margin-right: 2rem;
+        margin-top: 0.2rem;
+        float: left;
+    }
+    .button-head{
+        text-align: center ;
+        font-size: 0.7rem;
+        font-weight:650;
+        color: rgb(69, 75, 85) ; /* цвет текста */
+        text-decoration: none; /* убирать подчёркивание у ссылок */
+        user-select: none; /* убирать выделение текста */
+        background: rgb(255, 255, 255) ; /* фон кнопки */
+        padding: 0.5rem ; /* отступ от текста */
+        outline: none; /* убирать контур в Mozilla */
+        border-radius: 10px;
+        border:solid 2pt  rgb(69, 75, 85);
+    }
+    .button-section{
+        text-align: center ;
+        font-size: 0.6rem;
+        font-weight:550;
+        color: white ; /* цвет текста */
+        text-decoration: none; /* убирать подчёркивание у ссылок */
+        user-select: none; /* убирать выделение текста */
+        background: rgb(1, 140, 255) ; /* фон кнопки */
+        padding: 0.8rem 1rem ; /* отступ от текста */
+        outline: none; /* убирать контур в Mozilla */
+        border-radius: 10px;
+    }
+    .header__phone-number{
+        float:right;    
+        text-align: center;
+        margin-top: -0.4rem;
+    }
+    .phone-number{
+        font-weight: 700;
+        text-decoration: none;
+        color:black;
+        font-size:10pt;
+        display: inline-block;
+    }
+    form {
+        float: right;
+        position: relative;
+        width: 200px;
+        margin: 0 auto;
+    }
+    input {
+        font-size: 0.8rem;
+    margin-top:0rem;
+      width: 70%;
+      height: 42px;
+      padding-left: 35px;
+      display: inline-block;
+    }
+    button {
+        transform: translateY(+20.5%);
+        margin-top:0.6rem;
+      height: 22px;
+      width: 12px;
+      position: relative;
+      cursor: pointer;
+      background-image: none ;
+    }
+    .seaction__line{
+        font-size: 2.4rem;
+    }
+    .section__text{
+        font-size: 0.7rem;
+    }
+    .seaction__button{
+        width: 25%;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        margin-top: 0.15rem;
+    }
+    .section__arrow-left{ 
+        margin-top:4.8rem;
+    }
+    .section__arrow-right{
+        margin-top:4.4rem;
+        margin-left: 3rem;
+    }
+    .end__contacts{
+        margin-right: 3rem;
+    }
+}
+@media screen and (max-width: 970px) {
+    .header__text-logo{
+        font-size: 0.3rem;
+    }
+    .header__text-logo{
+        font-size: 0.7rem;
+    }
+    .button-head{
+        font-size: 0.5rem;
+    }
+    .header__button{
+        margin-top: 0rem;
+    }
+    .seaction__line{
+        font-size: 2rem;
+    }
+    input {
+        font-size: 0.6rem;
+    margin-top:0rem;
+      width: 60%;
+      padding-left: 15px;
+    }
+    .logo__wand-two{
+        width: 50%;
+        margin-top: 0.7rem;
+    }
+    .prj{
+        width: 100%;
+    }
+    .news{
+        display: block;
+        margin-top:0rem;
+        width: 55%;}
+    .news__list{
+        display: flex;
+    }
+    .rar{
+        font-size: 0.6rem;
+    }
+    .bigest{
+        font-size: 1rem;
+    }
+    .sale-headling{
+        font-size: 1rem;
+    }
+}
