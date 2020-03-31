@@ -1,0 +1,92 @@
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 95%;
+    }
+    .secend-wrapper__main{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .secend-wrapper__logo{
+        display: none;
+    }
+    .our__cards, .our-tabs__wrapper, .bottom-footer__container, .faq__wrapper, .faq__wrapper__cards,  .top-footer-container, .header__top, .card-row{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .our__card{
+        margin-bottom: 30px;
+    }
+    .faq__wrapper__cards, .faq__wrapper__scrol{
+        width: 100%;
+    }
+    .faq__wrapper__card, .faq__wrapper__scrol{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .container{
+        width: 99%;
+    }
+    .laps{
+        position: relative;
+        top: -340px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .container{
+        width: 100%;
+    }
+    .header__bottom{
+        display: none;
+    }
+    .laps{
+        position: relative;
+        top: -440px;
+    }
+    .footer__care, .footer__news, .quiq-links, .footer__last-block, .header__logo-block, .header__mail-block {
+        margin-bottom: 30px;
+  
+    }
+    .owl-item img{
+        height: 90vh;
+    }
+    .first__lap h1, .secend__lap{
+        font-size: 20px;
+    }
+    .first__lap{
+        display: flex;
+        justify-content: center;
+        width: 250px; 
+    }
+    .footer__news{
+        margin-right: 5rem ;
+    }
+    .header__logo-block, .header__mail-block{
+        margin-right: 1rem;
+    }
+}
+@media screen and (max-width: 675px) {
+    .secend-wrapper__main{
+    padding-left: 0;
+}
+.poster, .top-footer, .phone__third{
+    display: none;
+}
+.header__logo-block, .header__mail-block{
+    margin-right: 3rem;
+}
+.footer__news{
+    margin-left: auto;
+    margin-right: auto;
+}
+.get__free{
+    padding-bottom: 0;
+}
+.header__mail-block__info{
+    margin-right: 3rem;
+}
+}
