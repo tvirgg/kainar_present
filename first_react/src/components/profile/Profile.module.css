@@ -1,0 +1,11 @@
+.profile_img{
+    width: 300px;
+}
+.profile_name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.status{
+    float: right;
+    margin-top: 20px;
+}
