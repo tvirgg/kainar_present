@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/tvirgg/tvirgg.github.io/tree/master/MY%20PRJ",
+  "homepage": "https://github.com/tvirgg/tvirgg.github.io/tree/master/sec_react",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
