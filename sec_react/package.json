@@ -1,8 +1,8 @@
 {
-  "name": "tvirgg.github.io",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tvirgg.github.io/tvirgg.github.io",
+  "homepage": "http://tvirgg.github.io/kainar_present",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -23,7 +23,6 @@
     "reselect": "^4.0.0",
     "simple-react-form": "^2.5.4"
   },
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
