@@ -1,0 +1,7 @@
+body{
+    background-color: #544f63;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,32 @@
+.profil_photo{
+    width: 160px;
+    height: 140px;
+}
+body{
+    color: black;
+}
+.user_card_wrap{
+    margin-left: 50px;
+}
+.user_card{
+    margin-top: 60px;
+}
+.spans{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: -40px;
+}
+.paginator {
+    margin: 10px;
+}
+.pageNumber {
+    padding: 2px;
+    border: 1px solid grey;
+}
+
+ .selectedPage {
+    font-weight: bold;
+    border-color: black;
+     padding: 2px;
+     border: 1px solid grey;
+}
