@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="allpumps.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>12</title>
+</head>
+
+<body>
+    <h2 id="demo">JavaScript can change the style of an HTML element.</h2>
+    <div class="main_menu">
+        <div class="text">
+            <h2> Номер пары:</h2>
+        </div>
+        <select class="number_select" onchange="getData_number(this)">
+            <option value="first">Первая</option>
+            <option value="second">Вторая</option>
+            <option value="third">Третья</option>
+            <option value="ford">Четвертая</option>
+            <option value="five">Пятая</option>
+        </select>
+        <div class="text">
+            <h2> Цвет текста</h2>
+        </div>
+        <select class="front_color_select" onchange="getData_front_color(this)">
+            <option value="blue">Синий</option>
+            <option value="yellow">Желтый</option>
+            <option value="green">Зеленый</option>
+            <option value="black">Черный</option>
+            <option value="pink">Розовый</option>
+        </select>
+        <div class="text">
+            <h2> Цвет фона</h2>
+        </div>
+        <select class="front_color_select "  onchange="getData_background_color(this)">
+            <option value="blue">Синий</option>
+            <option value="yellow">Желтый</option>
+            <option value="green">Зеленый</option>
+            <option value="black">Черный</option>
+            <option value="pink">Розовый</option>
+        </select>
+        <input class="but" value="РАССЧЕТ" type="button" onclick="handler()">
+    </div>
+    <div class="lines">
+        <div class="line" >
+            <h2 id="first">
+                Первая пара (08:50-10:25) Физика, 223
+            </h2>
+        </div>
+        <div class="line">
+            <h2  id="second">
+                Вторая пара (10:40-12:15) Химия, 222
+            </h2>
+        </div>
+        <div class="line">
+            <h2  id="third">
+                Третья пара (13:15 - 14:50) Программирование, 2016
+            </h2>
+        </div>
+        <div  class="line" >
+            <h2 id="ford">
+                Четвертая пара (15:00 - 16:35) САПР, 3016
+            </h2>
+        </div>
+        <div class="line">
+            <h2  id="five">
+                Пятая пара (16:45-18:20) Математика, 204
+            </h2>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
