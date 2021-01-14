@@ -1,0 +1,534 @@
+@media screen and (max-width: 1300px) {
+    .parallax{
+        max-width:  434px;
+    }
+    .par_s{
+        top: 38%;
+        left: 25.5%;
+    }
+    #sec_par{
+        max-width:  434px;
+        max-height: 300px;
+    }
+    .about_wrap{
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .f_info_block{
+        margin-top: 1%;
+        max-width: 565px;
+    }
+    .s_info_block{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 1180px) {
+    .s_info_block{
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    nav{
+
+    }
+    .par_s{
+        top: 38%;
+        left: 16.5%;
+    }
+    .about_wrap{
+        font-size: 14px;
+        line-height: 32px;
+    }
+    .f_info_block{
+        margin-top: 4%;
+        max-width: 565px;
+    }
+    .s_info_block{
+        margin-top: 7%;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .gaalery{
+        margin-top: -1px;
+        height: 70vh;
+        padding-top: 25%;
+    }
+    .galer_desc_cont{
+        display: none;
+    }
+    .mob_galer{
+        display: block;
+    }
+    .about_wrap{
+        position: relative;
+        top: -70px;
+    }
+    .about_wrap h1{
+        margin-bottom: 70px;
+    }
+    .par_f{
+        max-width: 450px;
+        position: relative;
+        right: -16%;
+    }
+    .par_s{
+        position: relative;
+        top: 12%;
+        left: 140%;
+        max-width: 450px;
+        margin-left: 0;
+    }
+    .f_info_block{
+        max-width: 400px;
+        position: relative;
+        top: 0%;
+        left: 20%;
+        font-size: 17px;
+    }
+    .s_info_block{
+        position: relative;
+        top: 7%;
+        right: 80%;
+        font-size: 17px;
+        margin-left: 0;
+        max-width: 450px;
+    }
+    .about{
+        height: 130%;
+        padding-bottom: 50px;
+        margin-bottom: 0;
+    }
+    .about_work{
+        margin-top: -3px;
+        padding-top: 30px;
+    }
+    .visitment{
+        margin-top: -1px;
+    }
+    .about_work_wrap{
+        justify-content: space-between;
+        width: 90%;
+        text-align: center;
+    }
+    .f_call {
+        margin-right: 0%;
+    }
+    #lable_h1{
+        font-size: 50px;
+    }
+    .about_work p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .par_f{
+        right: -5%;
+    }
+    nav{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .logo_im{
+        width: 140px;
+    }
+    .f_info_block{
+        left: 10%;
+        font-size: 17px;
+    }
+    .vivsitment_block_wrap{
+        flex-direction: column;
+    }
+    .visit_info{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .visit_logo{
+            margin-top: 40px;
+            width: 100%;
+            text-align: center;
+    }
+.call_block h1{
+        font-size: 26px;
+}
+}
+@media screen and (max-width: 845px) {
+.s_info_block{
+    right: 75%;
+    margin-left: 10px;
+}
+}
+@media screen and (max-width: 770px) {
+    .f_info_block{
+        left: 0;
+    }
+    .par_f{
+        right: 50px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .home_info{
+        margin-top: 80px;
+    }
+    .call_block h1{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .home_info h1{
+        margin-top:  80px;
+  
+    }
+    .home_info h4{
+        margin-top: 30px;
+    }
+    .home_info h3{
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+    }
+    .home_number{
+        margin-top: 90px;
+    }
+    .about{
+        height: 130%;
+        margin-bottom: 0;
+        background: url("../images/about.jpg") 100%  100% no-repeat;
+        background-size: cover;
+    }
+    .about_work{
+        margin-top: -70px;
+    }
+    .about_parallax_block{
+        display: none;
+    }
+    .mob_about{
+        padding-top: 80px;
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .mob_parallax{
+
+        text-align: center;
+    }
+    .mob_about p{
+        margin: 50px 0;
+        font-size: 25px;
+        text-align: left;
+    }
+    .about_work_wrap{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .about_work__col{
+        width: 100%;
+    }
+    .call_block{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .call_block h1{
+        margin-bottom: 50px;
+        font-size: 50px;
+        text-align: center;
+        line-height: 70px;
+    }
+    .call_block p{
+        font-size: 25px;
+        margin-bottom: 60px;
+    }
+    .main_laib{
+        padding-top: 80px;
+    }
+    #desc_mb{
+        display: none;
+    }
+    #mob_sec_col{
+        display: block;
+    }
+    #lable_h1{
+        font-size: 60px;
+    }
+    .call_block {
+        margin-bottom: 63px;
+    }
+    .galer_desc_cont{
+        display: none;
+    }
+    /*///////////////////////////////*/
+    .gaalery{
+        height: 60vh;
+        padding-top: 15%;
+    }
+    .mob_galer{
+        height: 50vh;
+    }
+    .slider_photo{
+        height: 50vh;
+    }
+    #lable_h1{
+        display: none;
+    }
+}
+@media screen and (max-width: 560px) {
+    .home_info h1{
+        margin-top:  -20px;
+        font-size: 80px;
+    }
+    .home_info h4{
+        margin-top: 30px;
+    }
+    .home_info h3{
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+    }
+    .home_number{
+        margin-top: 20px;
+        font-size: 50px;
+    }
+    .call_block h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+    .gaalery{
+        height: 50vh;
+        padding-top: 25%;
+    }
+    .mob_galer{
+        height: 40vh;
+    }
+    .slider_photo{
+        height: 40vh;
+    }
+    .visitment h2 {
+        font-size: 30px;
+    }
+    .f_info_row_s {
+        margin-top: 20px;
+    }
+    .s_info_row_s {
+        margin-top: 115px;
+    }
+    .visitment h1 {
+        padding-top: 50px;
+        font-size: 52px;
+        margin-bottom: 70px;
+    }
+    .logo_visit {
+        min-width: 206px;
+        width: 200px;
+    }
+    .sec_work_col img {
+        margin-bottom: -5px;
+    }
+}
+@media screen and (max-width: 476px) {
+    .home_info h1{
+        margin-top:  -30px;
+        font-size: 55px;
+    }
+    .home_info h4{
+        margin-top: 30px;
+    }
+    .home_info h3{
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+    }
+    .home_number{
+        margin-top: 20px;
+        font-size: 40px;
+    }
+    .call_block p {
+        font-size: 19px;
+    }
+    .slider__control{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .f_info_row_s {
+        margin-top: 20px;
+    }
+    .s_info_row_s {
+        margin-top: 130px;
+    }
+    .visitment h2 {
+        font-size: 25px;
+    }
+    .gaalery{
+        height: 40vh;
+        padding-top: 25%;
+    }
+    .mob_galer{
+        height: 30vh;
+    }
+    .slider_photo{
+        height: 30vh;
+    }
+    .mob_about{
+        margin-top: -2px;
+    }
+    .mob_about p {
+        font-size: 20px;
+    }
+    .logo {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 380px) {
+    .call_block h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .gaalery{
+        height: 35vh;
+        padding-top: 25%;
+    }
+    .mob_galer{
+        height: 25vh;
+    }
+    .slider_photo{
+        height: 25vh;
+    }
+    .visitment h2 {
+        font-size: 23px;
+    }
+    .f_info_row_s {
+        margin-top: 22px;
+    }
+    .s_info_row_s {
+        margin-top: 130px;
+        margin-bottom: 110px;
+    }
+    .home_info h4{
+        font-size: 25px;
+    }
+    .logo {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .logo_im {
+        width: 100px;
+    }
+    .home_info h4{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .home_info h4{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .logo_im {
+        width: 100px;
+    }
+    .home_info{
+        margin-top: 80px;
+    }
+    .logo_visit {
+        min-width: 156px;
+        width: 150px;
+    }
+    .visitment h2 {
+        font-size: 20px;
+    }
+    .home_info h1{
+        margin-top:  -30px;
+        font-size: 55px;
+    }
+    .home_info h4{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .home_info h3{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .home_number{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .call_block h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .call_block {
+        margin-bottom: 13px;
+    }
+    .call_block p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .home_info h1{
+        margin-top:  -50px;
+        font-size: 50px;
+    }
+    .home_number{
+        margin-top: -20px;
+    }
+}
+@media screen and (max-width: 333px) {
+    .home_info h1{
+        margin-top:  -30px;
+        font-size: 50px;
+    }
+    .home_info h4{
+        margin-top: 20px;
+        font-size: 19px;
+    }
+    .home_info h3{
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+    }
+    .mob_about p {
+        font-size: 16px;
+    }
+    .gaalery{
+        height: 30vh;
+        padding-top: 25%;
+    }
+    .mob_galer{
+        height: 20vh;
+    }
+    .slider_photo{
+        height: 20vh;
+    }
+    .visitment h1{
+        font-size: 35px;
+    }
+    .visitment h2 {
+        font-size: 16px;
+    }
+    .f_info_row_s {
+        margin-top: 22px;
+    }
+    .s_info_row_s {
+        margin-top: 140px;
+        margin-bottom: 125px;
+    }
+    .logo_visit{
+        width: 100px;
+    }
+    .slider__control{
+        width: 10px;
+        height: 15px;
+    }
+}

@@ -2,7 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d74927b-ebe9-41e1-b559-aff8c3ef4965" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/css/adaptive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/css/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/about_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/about_work1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/about_work2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/about_work3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/about_work4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/galery/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/galery/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/galery/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/galery/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/galery/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/home1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/par_f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/par_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/visitment/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/visitment/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/visitment/map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/images/visitment/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/jquery.mCustomScrollbar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/mCSB_buttons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/.nvmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/dist/simpleParallax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/dist/simpleParallax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/src/helpers/convertToArray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/src/helpers/cssTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/src/helpers/isImageLoaded.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/src/helpers/isSupportedBrowser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/src/helpers/viewport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/src/instances/parallax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/src/simpleParallax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada_plast/js/simple-parallax-js/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604953463190</updated>
       <workItem from="1604953465153" duration="928000" />
+      <workItem from="1610655648618" duration="20000" />
     </task>
     <servers />
   </component>
