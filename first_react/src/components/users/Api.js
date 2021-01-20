@@ -30,14 +30,30 @@ export const UserAPI ={
     updateStatus(status) {
         return instance.put(`profile/status`, { status: status });
     },
+    saveProfile(profile) {
+        return instance.put(`profile`, profile);
+    },
+    savePhoto(photoFile) {
+        const formData = new FormData();
+        formData.append("image", photoFile);//создаем объект и вставляем в него элемент image со значение нашего файла
+
+        return instance.put(`profile/photo`, formData, {//отправляем на profile/photo наш объект, а так же другой объект с элементом Content-Type и значением 'multipart/form-data'//особенности синтексиса для сервака
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        });
+        },
     authrequire() {
         return instance.get(`auth/me`);
     },
-    login(email, password, rememberMe = false) {
-        return instance.post(`auth/login`, { email, password, rememberMe });
+    login(email, password, rememberMe = false, captcha = null ) {
+        return instance.post(`auth/login`, { email, password, rememberMe, captcha });
     },
     logout() {
         return instance.delete(`auth/login`);
+    },
+    getCaptchaUrl() {
+        return instance.get(`security/get-captcha-url`);
     }
 }
 

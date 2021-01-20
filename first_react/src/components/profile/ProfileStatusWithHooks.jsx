@@ -17,14 +17,19 @@ const ProfileStatusWithHooks  = (props) => {
         Setstatus(e.currentTarget.value);
     }
         return <div>
-            { !editmode &&
+            { !editmode && props.isowner &&//если это наша страница
             <div>
                 <span onDoubleClick={ activateEditMode }>{props.status || "-------"}</span>
             </div>
             }
-            {editmode &&
+            {editmode && props.isowner &&//если это наша страница во время изменения статуса
             <div>
                 <input onChange={onStatusChange} autoFocus={true} onBlur={deactivateEditMode} value={status}/>
+            </div>
+            }
+            { !props.isowner &&//если это не наша страница
+            <div>
+                <span>{props.status || "-------"}</span>
             </div>
             }
         </div>

@@ -9,7 +9,7 @@ const Profile = (props) => {
     return(
         <Container>
 
-            <Profileinfo profile={props.profile} status={props.status} updateStatus={props.updateStatus}/>
+            <Profileinfo SaveProfile={props.SaveProfile} isowner={props.isowner} profile={props.profile} status={props.status} updateStatus={props.updateStatus} SavePhoto={props.savePhoto}/>
             <Postscontainer/>
         </Container>
 )

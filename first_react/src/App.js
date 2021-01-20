@@ -3,15 +3,17 @@ import React, {Suspense} from 'react';
 import './App.css';
 import {connect, Provider} from "react-redux";
 import {compose} from "redux";
+import store from './redux/state/redux-store';
 import Main_wrapper from './components/main-wrapper/Mainwrap';
-import {Router, BrowserRouter, Route, withRouter} from "react-router-dom";
+import {Router, BrowserRouter, Route, withRouter, HashRouter} from "react-router-dom";
 import UsersContainer from './components/users/UsersContainer';
 import HeaderContainer from "./components/header/headerContainer";
 import Login from "./components/login/login";
 import {initializeApp} from "./redux/state/app-reducer";
 import Loader from "./components/users/loader";
-const ProfileContainer = React.lazy(() => import('./components/profile/ProfileContainer'));
 const Comentcontainer = React.lazy(() => import('./components/comment/comentcontainer'));
+const ProfileContainer = React.lazy(() => import('./components/profile/ProfileContainer'));
+
 class App extends React.Component {
     componentDidMount() {
         this.props.initializeApp();
@@ -36,7 +38,15 @@ class App extends React.Component {
 const mapStateToProps = (state) => ({
     initialized: state.app.initialized
 })
-export default compose(
+let AppContainer = compose(
     withRouter,
     connect(mapStateToProps, {initializeApp}))(App);
 
+const Myapp_JSApp = (props) => {
+    return <HashRouter basename={process.env.PUBLIC_URL}>
+        <Provider store={store}>
+            <AppContainer />
+        </Provider>
+    </HashRouter>
+}
+export default Myapp_JSApp;

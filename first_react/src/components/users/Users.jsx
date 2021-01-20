@@ -12,12 +12,11 @@ const Users = (props) => {
             props.users.map(u => <div key={u.id}>
             <span>
                 <div>
-                <div className={classes.user_card}>
-                    <NavLink to={'/profile/' + u.id}>
-                        <img className={classes.profil_photo} src={u.photos.small != null ? u.photos.small : "https://pbs.twimg.com/profile_images/1081531670656962561/J9QiHhLT_400x400.jpg"}/>
-                    </NavLink>
-
-                </div>
+                    <div className={classes.user_card}>
+                        <NavLink to={'/profile/' + u.id}>
+                            <img className={classes.profil_photo} src={u.photos.small != null ? u.photos.small : "https://pbs.twimg.com/profile_images/1081531670656962561/J9QiHhLT_400x400.jpg"}/>
+                        </NavLink>
+                    </div>
                 <div>
 
                 {u.followed

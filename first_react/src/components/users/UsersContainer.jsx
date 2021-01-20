@@ -1,13 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {
-    togglefollowingInProgress,
-    SetCurrentPage,
-    getUsersC, fallow, unfallow
-} from '../../redux/state/Users-reducer';
+import { togglefollowingInProgress, SetCurrentPage, getUsersC, fallow, unfallow } from '../../redux/state/Users-reducer';
 import Users from './Users';
 import Loader from './loader';
-import {getUsers} from "./Api.js";
 import {
     curentPageSelect,
     followingInProgresSelect,
