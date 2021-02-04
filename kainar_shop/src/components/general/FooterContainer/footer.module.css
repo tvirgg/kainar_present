@@ -1,0 +1,21 @@
+.mainblock{
+    width: 100%;
+    background-color: #343a40!important;
+}
+.navlink{
+    text-decoration: none;
+}
+.navlink:hover{
+    text-decoration: none;
+}
+.login{
+    text-decoration: none;
+    color: blueviolet;
+    margin-top: 5px;
+    font-weight: initial;
+    margin-left: -40px;
+    margin-right: 30px;
+}
+.out{
+    width: 120px;
+}
