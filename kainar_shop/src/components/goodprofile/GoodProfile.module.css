@@ -84,7 +84,7 @@ h4{
 .info_block__price{
     display: block;
     padding: 10px;
-    background-color: white;
+    background-color: #ffffff;
     max-width: 260px;
     text-align: center;
     align-items: center;
@@ -94,4 +94,8 @@ h4{
 .info_block__price h2{
     position: relative;
     top: 5px;
+}
+.in_bask{
+    color: #6dabd9;
+    text-shadow: 1px 1px 1px black, 0 0 0.02em #000000; /* Параметры тени */
 }

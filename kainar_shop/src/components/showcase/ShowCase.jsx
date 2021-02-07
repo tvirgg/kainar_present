@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Nav, Button, Navbar} from 'react-bootstrap';
 import classes from './ShowCase.module.css';
 import Cards from "./Card/card";
-import Bascket_item from "./bascket/inbasket";
 import {NavLink} from "react-router-dom";
 
 
@@ -13,10 +12,6 @@ const ShowCase = (props) => {
     }
 
     const [path, setPath] = useState('ind_imp');
-
-
-
-    let InbasketElements = props.Basket.map( m => <Bascket_item name={m.name}  price={m.price} pieces={m.pieces} /> );
     let Cards_item = props[path].map( m => <Cards key={m.id} id={m.id} name={m.name} price={m.price} photourl={m.photourl} pieces={m.pieces} category={path} GetInBascket={props.GetInBascket} PullOutBascket={props.PullOutBascket}/> );
 return (
     <Container>
@@ -63,19 +58,6 @@ return (
                 <Row className={classes.cards_block}>
                     {Cards_item}
                 </Row>
-                    </Col>
-                    <Col xs={2} className={classes.basket_block}>
-                        <Row>
-                            <h1>
-                                Now in the bascket
-                            </h1>
-                            <div className={classes.bascket_info}>
-                                <p>
-                                    Total count: {props.Common_counter}
-                                </p>
-                                {InbasketElements}
-                            </div>
-                        </Row>
                     </Col>
                 </Row>
             </Col>

@@ -43,3 +43,24 @@ width: 100%;
     font-family: Cyber_2;
     font-size: 8px;
 }
+.basket_block_a{
+    width: 100%;
+    display: flex;
+}
+.basket_info_block{
+    font-family: 'PT Mono', sans-serif;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    text-align: center;
+    z-index: 999;
+    width: 300px;
+    background-color: #6c757d;
+    padding-left: 20px;
+    opacity:1;
+    transition: 1s;
+}
+.basket_info_block h1{
+    font-size: 20px;
+}
+

@@ -8,6 +8,7 @@ import {
 import GoodProfile from "./GoodProfile";
 import {setProfilePageCreater} from "../../redux/state/ProfileGoodsData_reducer";
 import {withRouter} from "react-router-dom";
+import {GetInBascketCreater, PullOutBascketCreater} from "../../redux/state/GoodsData_reducer";
 
 class GoodProfileCont extends React.Component{
  componentDidMount()  {
@@ -29,7 +30,7 @@ class GoodProfileCont extends React.Component{
     }
     render() {
         return <>
-         <GoodProfile profile={this.props.curentProfilepage}/>
+         <GoodProfile profile={this.props.curentProfilepage} GetInBascket={this.props.GetInBascket} PullOutBascket={this.props.PullOutBascket} />
         </>
     }
 }
@@ -37,9 +38,18 @@ class GoodProfileCont extends React.Component{
 
 
 
+
 let DispatchToProps = (dispatch) =>{
     return{
-    SetProfilePage: (profId, profcategory) =>{dispatch(setProfilePageCreater(profId, profcategory));}}
+        SetProfilePage: (profId, profcategory) =>{dispatch(setProfilePageCreater(profId, profcategory));
+        },
+        GetInBascket: (goodobj) =>{
+            dispatch(GetInBascketCreater(goodobj));
+        },
+        PullOutBascket: (goodobj) =>{
+            dispatch(PullOutBascketCreater(goodobj));
+        }
+    }
 }
 let mapStateToProps = (state) => {
     return {

@@ -1,9 +1,9 @@
 export const mainIdSelect = (state) =>{
-    return  state.ProfilePageData.mainId;
+    return  state.GoodsData.mainId;
 }
 export const maincategorySelect = (state) =>{
-    return  state.ProfilePageData.maincategory;
+    return  state.GoodsData.maincategory;
 }
 export const curentProfilepageSelect = (state) => {
-    return state.ProfilePageData.curentProfilepage;
+    return state.GoodsData.curentProfilepage;
 }
