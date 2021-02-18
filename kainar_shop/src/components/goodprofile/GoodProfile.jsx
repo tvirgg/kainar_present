@@ -15,25 +15,24 @@ const GoodProfile = (props) => {
         props.PullOutBascket(goodobj);
     }
     return (
-        <>
             <Container className={classes.prof_c}>
                 <Row>
                     <h1 className={classes.main_lable}>
-                        {props.profile.name}
+                        {props.name}
                     </h1>
                 </Row>
                 <Row>
                     <Col md={7} className={classes.galer_block}>
                         <div className={classes.galery}>
                             <AwesomeSlider className={classes.aws_btn}>
-                                {props.profile.photourl.map( m => <div key={m} data-src={m} />)}
+                                {props.photourl.map( m => <div key={m} data-src={m} />)}
                             </AwesomeSlider>
                         </div>
                     </Col>
                     <Col md={5} className={classes.info_block}>
                         <div className={classes.info_block__price}>
                             <h2>
-                                Price: {props.profile.price} $
+                                Price: {props.price} $
                             </h2>
                         </div>
                         <h5>
@@ -41,10 +40,10 @@ const GoodProfile = (props) => {
                         </h5>
                         <hr></hr>
                         <p>
-                            {props.profile.description}
+                            {props.description}
                         </p>
                         <h3 className={classes.in_bask}>
-                            IN BASKET NOW: {props.profile.pieces}
+                            IN BASKET NOW: {props.pieces}
                         </h3>
                         <Row className={classes.btn_block}>
                             <Button variant="light" onClick={() => {PullOutBascket(props.profile)}}>-</Button>
@@ -53,7 +52,6 @@ const GoodProfile = (props) => {
                     </Col>
                 </Row>
             </Container>
-        </>
     )
 }
 

@@ -3,10 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {connect} from "react-redux";
 import {compose} from "redux";
 import {
- mainIdSelect, maincategorySelect, curentProfilepageSelect
+    mainIdSelect,
+    maincategorySelect,
+    curentProfilepageSelect,
+    curentpiecesSelect,
+    curentnameSelect,
+    curentdescriptionSelect, curentpriceSelect, curentphotourlSelect
 } from "./GoodProfile-selector";
 import GoodProfile from "./GoodProfile";
-import {setProfilePageCreater} from "../../redux/state/ProfileGoodsData_reducer";
+import {setProfilePageCreater} from "../../redux/state/GoodsData_reducer.js";
 import {withRouter} from "react-router-dom";
 import {GetInBascketCreater, PullOutBascketCreater} from "../../redux/state/GoodsData_reducer";
 
@@ -30,15 +35,13 @@ class GoodProfileCont extends React.Component{
     }
     render() {
         return <>
-         <GoodProfile profile={this.props.curentProfilepage} GetInBascket={this.props.GetInBascket} PullOutBascket={this.props.PullOutBascket} />
+         <GoodProfile profile={this.props.curentProfilepage} pieces = {this.props.pieces}
+                      name = {this.props.name} description={this.props.description}
+                      price = {this.props.price} photourl = {this.props.photourl}
+                      GetInBascket={this.props.GetInBascket} PullOutBascket={this.props.PullOutBascket} />
         </>
     }
 }
-
-
-
-
-
 let DispatchToProps = (dispatch) =>{
     return{
         SetProfilePage: (profId, profcategory) =>{dispatch(setProfilePageCreater(profId, profcategory));
@@ -55,7 +58,14 @@ let mapStateToProps = (state) => {
     return {
         mainId: mainIdSelect(state),
         maincategory: maincategorySelect(state),
-        curentProfilepage: curentProfilepageSelect(state)
+        curentProfilepage: curentProfilepageSelect(state),
+        pieces: curentpiecesSelect(state),
+        name: curentnameSelect(state),
+        description: curentdescriptionSelect(state),
+        price: curentpriceSelect(state),
+        photourl: curentphotourlSelect(state)
+
+
     }
 }
 export default compose(

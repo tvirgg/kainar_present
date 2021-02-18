@@ -54,15 +54,6 @@ h4{
     text-align: center;
     align-items: center;
 }
-.left_ar{
-    transform: rotate(180deg);
-    position: relative;
-    left:-2px
-}
-.right_ar{
-    position: relative;
-    left:2px
-}
 .galer_block{
     width: 100%;
     display: flex;
@@ -85,7 +76,7 @@ h4{
     display: block;
     padding: 10px;
     background-color: #ffffff;
-    max-width: 260px;
+    max-width: 300px;
     text-align: center;
     align-items: center;
     border-radius: 50px;
@@ -98,4 +89,8 @@ h4{
 .in_bask{
     color: #6dabd9;
     text-shadow: 1px 1px 1px black, 0 0 0.02em #000000; /* Параметры тени */
+}
+.btn_block{
+    padding-left: 15px;
+    margin-bottom: 150px;
 }

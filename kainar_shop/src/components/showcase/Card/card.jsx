@@ -13,8 +13,7 @@ const Cards = (props) => {
         props.PullOutBascket(goodobj);
     }
     return (
-        <>
-            <div>
+            <div  className={classes.card_item__block}>
                <Card style={{ width: '18rem' }} className={classes.card_item}>
                     <NavLink to={'/goodprofile/' + props.category + '/' + props.id}>
                         <Card.Img variant="top" src={props.photourl[0]}/>
@@ -26,10 +25,7 @@ const Cards = (props) => {
                                 Price:
                                 {props.price}
                             </span>
-                            <span>
-                                Category:
-                                {props.category}
-                            </span>
+                            <br></br>
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
@@ -45,7 +41,6 @@ const Cards = (props) => {
                     </ListGroup>
                 </Card>
             </div>
-        </>
     );
 }
 export default Cards;

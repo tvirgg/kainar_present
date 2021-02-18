@@ -15,7 +15,7 @@ const Header = (props) => {
                 <Col md={2}>
                     <img  src={logo} height="50px" />
                 </Col>
-                <Col md={3} className={classes.navlink_block_wpapp}>
+                <Col md={5} className={classes.navlink_block_wpapp}>
                     <Nav className={classes.navlink_block}>
                             <NavLink to="/main" className={classes.navlink}>
                                 MAIN
@@ -23,12 +23,15 @@ const Header = (props) => {
                             <NavLink to="/shop" className={classes.navlink}>
                                 SHOP
                             </NavLink>
+                            <NavLink to="/basket" className={classes.navlink}>
+                                BASKET
+                            </NavLink>
                             <NavLink to="/blog" className={classes.navlink}>
                                 BLOG
                             </NavLink>
                     </Nav>
                 </Col>
-                <Col md={{ span: 2, offset: 5 }} className={classes.basket_block}>
+                <Col md={{ span: 2, offset: 3 }} className={classes.basket_block}>
                     <a onClick={() => setbask_disp(!bask_disp)}  className={classes.basket_block_a}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 21 21" icon="cart"
                              className="default-header-cart-icon">

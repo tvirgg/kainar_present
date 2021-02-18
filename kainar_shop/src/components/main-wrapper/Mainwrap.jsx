@@ -11,7 +11,7 @@ import Col from "react-bootstrap/Col";
 const Main_wrapper = () => {
     return (
         <>
-        <Carousel className={classes.wrappercarusel} controls={false} interval={3700} indicators={false}>
+        <Carousel className={classes.wrappercarusel} controls={false} interval={2700} indicators={false}>
             <Carousel.Item className={classes.wrappercarusel_item}>
                 <img
                     className="d-block w-100"

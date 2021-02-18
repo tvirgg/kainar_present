@@ -9,7 +9,9 @@ import HeaderContainer from "./components/general/HeaderContainer/headerContaine
 import Main_wrapper from "./components/main-wrapper/Mainwrap";
 import ShowCaseContainer from "./components/showcase/ShowCaseContainer";
 import GoodProfileContainer from "./components/goodprofile/GoodProfileContainer";
-import Switch from "react-bootstrap/Switch";
+import BlogContainer from "./components/blog/BlogContainer";
+import BasketComponentContainer from "./components/basket/BasketComponentContainer";
+import Footer from "./components/general/FooterContainer/footer";
 
 class App extends React.Component {
   render() {
@@ -19,6 +21,9 @@ class App extends React.Component {
               <Route path={"/main"} render={() => <Main_wrapper/>}/>
               <Route path={"/shop"} render={() => <ShowCaseContainer/>}/>
               <Route path={"/goodprofile/:profcategory?/:profId?"} render={() => <GoodProfileContainer/>}/>
+              <Route path={"/blog"} render={() => <BlogContainer/>}/>
+              <Route path={"/basket"} render={() => <BasketComponentContainer/>}/>
+              <Footer/>
         </div>
     );
   }

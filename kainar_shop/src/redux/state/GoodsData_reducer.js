@@ -11,7 +11,7 @@ import hand2 from "../../img/implants/hand/2.jpg";
 import hand3 from "../../img/implants/hand/3.jpg";
 import hand4 from "../../img/implants/hand/4.jpg";
 import intohand1 from "../../img/into the body/intohand/1.jpg";
-import intohand2 from "../../img/into the body/intohand/2.gif";
+import intohand2 from "../../img/into the body/intohand/2.gif"
 import intohead1 from "../../img/into the body/intohead/1.jpg";
 import intohead2 from "../../img/into the body/intohead/2.jpg";
 import intohead3 from "../../img/into the body/intohead/2.jpg";
@@ -57,7 +57,7 @@ let initialstate = {
   complect_imp:[
     {id: 1, category: 'complect_imp', name: 'Kits R 11', price: 100, photourl: [complect_r1, complect_r2], pieces: 0, description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'},
     {id: 2, category: 'complect_imp', name: 'Kits T 22', price: 100, photourl: [complect_t1, complect_t2], pieces: 0, description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'},
-    {id: 2, category: 'complect_imp', name: 'Kits M 33', price: 100, photourl: [complect_m1, complect_m2], pieces: 0, description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'},
+    {id: 3, category: 'complect_imp', name: 'Kits M 33', price: 100, photourl: [complect_m1, complect_m2], pieces: 0, description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'},
   ],
   utilits:[
     {id: 1, category: 'utilits', name: 'Robo-fist C 10', price: 100, photourl: [robo_f1, robo_f2, robo_f3, robo_f4, robo_f5], pieces: 0, description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'},
@@ -75,33 +75,33 @@ let initialstate = {
 }
 const GoodsDataReducer = (state=initialstate, action) =>{
   if (action.type === 'SetProfile'){
-    let curent_data =  state[action.category].find(item => item.id === parseInt(action.goodid));
+    let curent_data =  state[action.category].find(item => item.id === parseInt(action.goodid)) 
     return{
       ...state,
       curentProfilepage: curent_data
     }
   }
   else if (action.type === 'UpCounter'){
-        let new_value = state.Common_counter + 1;
+        let new_value = state.Common_counter + 1 
         return{
           ...state,
           Common_counter: new_value
     }
   }
-  /*/&& state.Bascket.find(own_g => own_g.id === action.goodid).id === action.goodid/*/
       else if (action.type === 'GetGood'){
-        let path = action.category;
-        state[path].find(own_g => own_g.id === action.goodid).pieces = action.goodpieces + 1;
-          state.Common_counter = state.Common_counter + action.goodprice;
+        let path = action.category 
+        state[path].find(own_g => own_g.id === action.goodid).pieces = action.goodpieces + 1 
+          state.Common_counter = state.Common_counter + action.goodprice 
+    console.log(state.curentProfilepage) 
         if(state.Basket.length !== 0 && state.Basket.findIndex(own_g => own_g.id === action.goodid && own_g.category === action.category) !== -1){
-          state.Basket.find(good => good.id === action.goodid && good.category === action.category).pieces = action.goodpieces + 1;//не может найти с таким же id так как его нет
+          state.Basket.find(good => good.id === action.goodid && good.category === action.category).pieces = action.goodpieces + 1 
           return{
             ...state
           }
         }else{
           return{
             ...state,
-            Basket: [...state.Basket, {id: action.goodid, name: action.goodname, price: action.goodprice, pieces: action.goodpieces + 1, category: action.category}],
+            Basket: [...state.Basket, {id: action.goodid, name: action.goodname, price: action.goodprice, pieces: action.goodpieces + 1, category: action.category, photourl: action.goodphotourl}],
           }
         }
       }
@@ -111,12 +111,12 @@ const GoodsDataReducer = (state=initialstate, action) =>{
 
       else if (action.type === 'PullOutGood')
       {
-        let path = action.category;
+        let path = action.category 
         if (action.goodpieces>0 && state.Common_counter>=0) {
-          state.Common_counter = state.Common_counter - action.goodprice;
-          state[path].find(own_g => own_g.id === action.goodid).pieces = action.goodpieces - 1;
+          state.Common_counter = state.Common_counter - action.goodprice 
+          state[path].find(own_g => own_g.id === action.goodid).pieces = action.goodpieces - 1 
           if (state.Basket.length !== 0 && state.Basket.findIndex(own_g => own_g.id === action.goodid  && own_g.category === action.category) !== -1){
-            state.Basket.find(good => good.id === action.goodid && good.category === action.category).pieces = action.goodpieces - 1;
+            state.Basket.find(good => good.id === action.goodid && good.category === action.category).pieces = action.goodpieces - 1 
             state.Basket.forEach(function(el, i){
               if (el.pieces === 0) state.Basket.splice(i, 1)
             })
@@ -141,7 +141,7 @@ const GoodsDataReducer = (state=initialstate, action) =>{
         }
       }
     else {
-      return state;
+      return state 
     }
 }
 export const CounterUppercreater = () =>{
@@ -156,7 +156,7 @@ export const setProfilePageCreater = (userId, category) =>  {
 }
 export const GetInBascketCreater = (obj) =>{
   return{
-    type: 'GetGood', goodid: obj.id, goodprice: obj.price, goodpieces: obj.pieces, goodname: obj.name, category: obj.category
+    type: 'GetGood', goodid: obj.id, goodprice: obj.price, goodpieces: obj.pieces, goodname: obj.name, category: obj.category, goodphotourl: obj.photourl
   }
 }
 export const PullOutBascketCreater = (obj) =>{
@@ -164,23 +164,4 @@ export const PullOutBascketCreater = (obj) =>{
     type: 'PullOutGood', goodid: obj.id, goodprice: obj.price, goodpieces: obj.pieces, goodname: obj.name, category: obj.category
   }
 }
-/*/
-export const Common_counter_pumperC = (obj) =>{
-  return{
-    type: 'CommonCounterPumper', goodprice: obj.price
-  }
-}
-
-export const GetInBascketCreaterС = (obj) => {
-  return (dispatch) => {
-    dispatch(Common_counter_pumperC(obj));
-  }}
-else if (action.type === 'CommonCounterPumper')
-        {
-          return {
-            ...state,
-            Common_counter: state.Common_counter + action.goodprice
-          }
-        }
-/*/
-export default GoodsDataReducer;
+export default GoodsDataReducer 

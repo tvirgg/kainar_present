@@ -6,26 +6,29 @@
 }
 .cards_block{
     margin-bottom: 200px;
-    font-family: 'PT Mono', sans-serif;
+    font-family: Cyber_3;
 }
-.basket_block{
-    height: 100%;
-    background-color: #6c757d;
-    margin-left: -60px;
-    text-align: center;
-}
-.bascket_info{
-    padding-top: 50px;
-    text-align: left;
-    padding-bottom: 50px;
-}
-.bascket_info p{
-    font-weight: bold;
-}
-
 h4{
     font-size: 20px;
 }
 .basket_block h1{
     font-size: 40px;
+}
+.navlink:hover{
+    text-decoration: none;
+}
+.navlink_block__item{
+    box-shadow: inset 2px 2px 5px rgb(92, 65, 138);
+    min-width: 180px;
+    text-align: center;
+    padding: 15px;
+    font-family: Cyber_3;
+    font-size: 13px;
+}
+.navlink_block__item:hover{
+    background-color: #5a2d66;
+    color: #007bff;
+}
+.table_ofgoods{
+    margin-top: 30px;
 }

@@ -24,6 +24,10 @@
   font-family: Cyber_2; /* Имя шрифта */
   src: url(./fonts/cyber_2.ttf); /* Путь к файлу со шрифтом */
 }
+@font-face {
+  font-family: Cyber_3; /* Имя шрифта */
+  src: url(./fonts/cyber_3.otf); /* Путь к файлу со шрифтом */
+}
 body {
   margin: 0;
 }
@@ -46,4 +50,7 @@ code {
   --control-bullet-active-color: transparent !important;
   --loader-bar-color: transparent !important;
   --loader-bar-height: 1px !important;
+}
+.navbar{
+  padding: 0 !important;
 }
