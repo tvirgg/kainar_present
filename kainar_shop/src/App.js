@@ -7,7 +7,7 @@ import store from './redux/state/redux-store';
 import {Route, withRouter, HashRouter} from "react-router-dom";
 import HeaderContainer from "./components/general/HeaderContainer/headerContainer";
 import Main_wrapper from "./components/main-wrapper/Mainwrap";
-import ShowCaseContainer from "./components/showcase/ShowCaseContainer";
+import ShowCaseCont from "./components/showcase/ShowCaseContainer";
 import GoodProfileContainer from "./components/goodprofile/GoodProfileContainer";
 import BlogContainer from "./components/blog/BlogContainer";
 import BasketComponentContainer from "./components/basket/BasketComponentContainer";
@@ -17,9 +17,9 @@ class App extends React.Component {
   render() {
     return (
         <div>
-          <HeaderContainer/>
+            <HeaderContainer/>
               <Route path={"/main"} render={() => <Main_wrapper/>}/>
-              <Route path={"/shop"} render={() => <ShowCaseContainer/>}/>
+              <Route path={"/shop"} render={() => <ShowCaseCont/>}/>
               <Route path={"/goodprofile/:profcategory?/:profId?"} render={() => <GoodProfileContainer/>}/>
               <Route path={"/blog"} render={() => <BlogContainer/>}/>
               <Route path={"/basket"} render={() => <BasketComponentContainer/>}/>
@@ -29,10 +29,11 @@ class App extends React.Component {
   }
 }
 const mapStateToProps = (state) => ({
+    initialized: state.AppData.initialized
 })
 let AppContainer = compose(
     withRouter,
-    connect(mapStateToProps))(App);
+    connect(mapStateToProps,))(App);
 
 const Myapp_JSApp = (props) => {
   return <HashRouter basename={process.env.PUBLIC_URL}>

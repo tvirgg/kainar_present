@@ -1,13 +1,32 @@
+import {initializeApp} from "./App_reducer";
+import {UserAPI as API} from "../../Api";
+
 let initialstate = {
    Posts: [
-       { lable:'Who are we ?', text : 'We are a consultancy that helps organisations achieve exceptional results by finding and applying practical solutions to complex business and people challenges. We interrupt existing patterns of thinking and instigate powerful, sustainable change.  We also help you to communicate with and inspire your employees, creating an environment where they choose to become engaged.\n' + '\n' + ' Our down to earth, common sense approach will give you the clarity to take action which will help your organisation grow and your people succeed. We have extensive expertise which is grounded in the reality of sitting on your side of the desk.', date: '12.11.2040', authorname: 'GIZON DENALT', position: "Director", id: 1},
-       { lable:'Our philosophy', text: 'Focus on the user and all else will follow.\n' + 'It’s best to do one thing really, really well.\n' + 'Fast is better than slow.\n' + 'Democracy on the web works.\n' + 'You don’t need to be at your desk to need an answer.\n' + 'You can make money without doing evil.\n' + 'There’s always more information out there.\n' + 'The need for information crosses all borders.\n' + 'You can be serious without a suit.\n' + 'Great just isn’t good enough.', authorname: 'Mike Simon', date: '01.24.2041', id: 2, position: 'Loader'},
-       { lable:'Why choose us?', text: 'We pride ourselves on helping you to deliver exceptional business results within a short time-frame which have a long-lasting impact.\n' + '\n' + 'We are transformative, challenging and professional – with a sense of humour! We make you stop and think.\n' + '\n' + 'Our aim is to transfer skills to you so that you can develop in-house expertise.\n' + '\n' + 'We are confident that the 30,000 people that we have worked with in the last 18 years will say the same.', authorname: 'Rebecca Lokon', date: '21.02.2041', id: 3, position: 'Junior Manager'},
-       { lable:'A Valentine Meal on our company', text: 'Valentine’s Day is approaching. And even though it seems life could get back to a new “normal” sometime this year, it won’t be before Cupid arrives.\n' + 'For many years, we have been publicly demonstrating our devotion for food safety and sustainability. To affirm our commitment, we decided to make a simple dinner of steak, salad and (of course) wine to woo you with some of the work we’re doing.', authorname: 'Jery Wolker', date: '9.01.2041', id: 4, position: 'Post worker'},
-       { lable:'Why we Need a Blog', text: 'A company blog is simply a blog that’s attached to your business in some way. Usually, it will be a part of your larger business website. \n' + 'One of the best things about company blogs is that they can be as unique as your business. Depending on your brand and niche, you could use your blog for a variety of purposes. It could be a news resource or a collection of in-depth technical tutorials. No matter what type of content you publish, you can use your blog to create a unique voice for your business and brand.\n' + '\n' + 'If you’re asking yourself why a company would need a blog in the first place, you might be surprised to learn that there are several benefits to corporate blogging (just check out these business blogging statistics)! Having a company blog makes it possible to: \n' + 'Drive traffic and awareness to your site by using related keywords. It also helps you build more backlinks, as others are likely to share your posts on their own websites.\n' + 'Increase your lead generation. Blogging helps grow your audience, which means you can attract new leads. In fact, companies that blog regularly get more leads than those who don’t.\n' + 'Provide value to your customers and readers. By producing high-quality content, you can entertain and inform your audience.\n' + 'Communicate news and interesting information. Having your own blog can be a smart way to increase transparency about the goings-on in your business and to build connections with your users.\n' + 'Establish yourself as an authority. If you produce smart and helpful content, you can build your company’s image as an authority in your field, industry, or niche.', authorname: 'Artem Ganeyev', date: '20.03.2043', id: 5, position: 'Senior director'}
    ]
 }
 const BlogPageDataReducer = (state=initialstate, action) =>{
-      return state;
+    if (action.type === 'GetBlogdata'){
+        return{
+            ...state,
+            Posts: action.data
+    }
+    }
+    else {
+        return state
+    }
+}
+
+
+export const getGoodcategoryDatacreater = (data) =>{
+    return{
+        type: 'GetBlogdata', data: data
+    }
+}
+export const getBlogDatathunk = () => async (dispatch) => {
+    dispatch(initializeApp(false));
+    let response = await API.GetBlogPosts();
+    dispatch(getGoodcategoryDatacreater(response.data));
+    dispatch(initializeApp(true));
 }
 export default BlogPageDataReducer;

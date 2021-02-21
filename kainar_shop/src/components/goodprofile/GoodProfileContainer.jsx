@@ -64,8 +64,6 @@ let mapStateToProps = (state) => {
         description: curentdescriptionSelect(state),
         price: curentpriceSelect(state),
         photourl: curentphotourlSelect(state)
-
-
     }
 }
 export default compose(
