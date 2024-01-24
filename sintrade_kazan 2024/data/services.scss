@@ -1,0 +1,137 @@
+@import "../src/app/variables";
+
+.services {
+  .service-title {
+    text-transform: uppercase;
+    font-size: 48px;
+    position: relative;
+    margin-left: 59px;
+    margin-bottom: 30px;
+    font-weight: map-get($font-weights, "SemiBold");
+
+    @media (max-width: 1110px) {
+      font-size: 32px;
+      margin-left: 26px;
+      font-weight: map-get($font-weights, "Bold");
+    }
+  }
+
+  @media (max-width: 1110px) {
+    .service-block:nth-of-type(2) {
+      img {
+        width: auto;
+        order: 1;
+        position: relative;
+        margin: auto 0 auto 50%;
+        left: auto;
+        right: 0;
+      }
+      .service-block--text {
+        order: 2;
+      }
+    }
+  }
+  @media (max-width: 710px) {
+    .service-block:nth-of-type(2) {
+      img {
+        width: auto;
+        margin: auto 0 auto 27px;
+      }
+    }
+  }
+
+  .service-block {
+    img {
+      width: 50%;
+      height: auto;
+      object-fit: contain;
+    }
+    .service-block--text {
+      width: 50%;
+      margin-left: 59px;
+      margin-right: 59px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+
+      @media (max-width: 1110px) {
+        margin-left: 26px;
+        margin-right: 26px;
+      }
+    }
+
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    @media (max-width: 1110px) {
+      flex-flow: column nowrap;
+      width: 100%;
+
+      .service-block--text {
+        width: auto;
+        margin-top: 27px;
+      }
+      img {
+        width: auto;
+        margin: auto 50% auto 0;
+      }
+      margin-bottom: 38px;
+    }
+    @media (max-width: 710px) {
+      img {
+        width: auto;
+        margin: auto 27px auto 0;
+      }
+    }
+  }
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 10% 0px;
+}
+
+.service-block h2 {
+  position: relative;
+  font-size: 32px;
+  font-weight: map-get($font-weights, "SemiBold");
+  line-height: 130%;
+  text-align: left;
+
+  @media (max-width: 1110px) {
+    font-size: 24px;
+    font-weight: map-get($font-weights, "Regular");
+  }
+}
+
+.service-block p {
+  position: relative;
+  font-size: 16px;
+  font-weight: map-get($font-weights, "Light");
+  line-height: 130%;
+  text-align: left;
+
+  @media (max-width: 1110px) {
+    font-size: 14px;
+  }
+}
+
+.request-btn {
+  position: relative;
+  margin-top: 22px;
+  border-radius: 20px;
+  background: #e71616;
+  font-size: 16px;
+  font-weight: map-get($font-weights, "Medium");
+  padding: 9px 20px;
+  color: $color_white;
+  cursor: pointer;
+
+  &:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+}

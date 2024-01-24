@@ -1,0 +1,133 @@
+@import "../../app/variables";
+.form_back{
+background: rgba(255, 255, 255, 0.60);
+  position: fixed;
+  z-index: 111;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.request-form {
+  z-index: 112;
+  font-family: Arial, sans-serif;
+  border-radius: 45px;
+  background: rgba(228, 231, 248, 0.50);
+  backdrop-filter: blur(25px);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 822px;
+  height: 539px;
+  flex-shrink: 0;
+  padding: 0 33px;
+}
+
+.request-form--hidden {
+  display: none;
+}
+
+.request-form__header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.request-form__close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  top: 30px;
+}
+
+.request-form__title {
+  margin-top: 93px;
+  margin-bottom: 33px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: map-get($font-weights, "Regular");
+  line-height: 30px; /* 83.333% */
+}
+
+.customer-info{
+  display: flex;
+  justify-content: space-around;
+}
+.request-form__input,
+.request-form__textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 48px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.request-form__input::placeholder,
+.request-form__textarea::placeholder {
+  color: #999;
+}
+
+.request-form__textarea {
+  height: 80px;
+}
+
+.customer-info_item{
+  width: 50%;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+}
+.customer-info_item{
+  input, textarea{
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #E1E7EE;
+    background: #FFF;
+    width: 354px;
+    height: 48px;
+    margin: 4px;
+  }
+}
+.customer-info_item:first-child{
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.form-error {
+  color: #D91C1C;
+  margin-bottom: 10px;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+}
+.customer-info_item__area{
+  height: 159px !important;
+}
+.btn_block{
+  display: flex;
+  justify-content: center;
+}
+.request-form__submit-button {
+  margin-top: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 133px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #E71616;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}

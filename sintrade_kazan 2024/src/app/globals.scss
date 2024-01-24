@@ -1,0 +1,105 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #bfc5d3;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #bfc5d3;
+  color: #ffffff;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  position: relative;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  font-family: "VelaSans", sans-serif;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  margin: auto !important;
+  max-width: 1600px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+button:hover,
+button:focus,
+button:active {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: $background_lightGrayBlue;
+  border-radius: 0px;
+}
+
+@each $name, $weight in $font-weights {
+  @font-face {
+    font-family: "VelaSans";
+    src: url("/fonts/VelaSans-#{$name}.woff2") format("woff2"), url("/fonts/VelaSans-#{$name}.woff") format("woff");
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}

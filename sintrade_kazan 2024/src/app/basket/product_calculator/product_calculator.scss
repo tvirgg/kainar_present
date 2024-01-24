@@ -1,0 +1,175 @@
+.product-calculator{
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 72px;
+  h1{
+    margin-bottom: 21px;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 125% */
+    margin-left: 15px;
+  }
+}
+.quantity-button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  background: #FFF;
+  width: 85px;
+  height: 30px;
+  padding: 0px 5px;
+  box-shadow: 0px 0px 10px 0px #CBD1E5;
+}
+.quantity-button_btn{
+  width: 40px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  user-select: none;
+  align-items: center;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.product-name {
+  flex-grow: 1;
+}
+
+.product-quantity {
+  margin: 0 10px;
+}
+
+.add-to-cart-btn {
+  background-color: red;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 60px;
+  width: 200px;
+  margin-left: 10px;
+  box-shadow: 0px 0px 10px 0px #CBD1E5;
+}
+.add-to-cart-btn:hover {
+  background-color: #bb0a0a;
+  transition: 0.3s;
+}
+.product-calculator__label{
+  display: flex;
+  justify-content: space-around;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px #CBD1E5;
+  padding: 5px;
+  border-radius: 15px;
+  height: 50px;
+  flex-shrink: 0;
+  align-items: center;
+  margin-bottom: 19px;
+  max-width: 450px;
+  p{
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.product-calculator__price_row{
+  min-width: 577px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.product-calculator__price_row__slow {
+  border-bottom: 1px black solid;
+  padding-bottom: 15px;
+  width: 430px;
+  display: flex;
+  justify-content: space-around;
+  color: #000;
+p{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+}
+.product-calculator__price_row__slow_h3{
+  flex-grow: 0.45;
+}
+@media (max-width: 615px) {
+  .product-calculator__price_row__slow_h3{
+    flex-grow: 0.25;
+  }
+  .product-calculator{
+    max-width: 100%;
+  }
+  .product-calculator__price_row__slow {
+    width: 100%;
+  }
+  .product-calculator__price_row{
+    min-width: 100%;
+    padding: 10px 0;
+  }
+  .product-calculator__label{
+    max-width: 80%;
+  }
+  .quantity-button{
+    position: relative;
+    top: 2px;
+    right: -5px;
+  }
+}
+@media (max-width: 470px) {
+  .product-calculator__price_row__slow {
+    p{
+      font-size: 14px;
+    }
+  }
+  .product-calculator__price_row__slow_h3{
+    flex-grow: 0.25;
+  }
+  .product-calculator{
+    max-width: 100%;
+  }
+  .product-calculator__price_row__slow {
+    width: 60%;
+  }
+  .product-calculator__price_row{
+    padding: 10px 0;
+  }
+  .product-calculator__label{
+    max-width: 60%;
+  }
+  .quantity-button{
+    position: relative;
+    top: -5px;
+    right: 25px;
+  }
+  .product-calculator__label{
+    margin-left: 10px;
+    p{
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .quantity-button{
+    position: relative;
+    top: -5px;
+    right: 10px;
+  }
+}

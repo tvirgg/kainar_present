@@ -1,0 +1,223 @@
+@import "../../app/variables";
+
+.contacts {
+  .contacts__group--dir {
+    p {
+      font-size: 16px;
+      font-weight: map-get($font-weights, "Light");
+      margin-bottom: 10px;
+    }
+    width: 100%;
+  }
+  .contacts__bottom-arrow {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    color: $color_black;
+    font-size: 20px;
+    font-weight: map-get($font-weights, "Light");
+    padding-bottom: 6px;
+    border-bottom: 1px solid $color_black;
+    background: url("/icons/rightArrow.svg") no-repeat right center;
+    background-size: 14px 14px;
+
+    @media (max-width: 1110px) {
+      font-size: 16px;
+      background-size: 12px 12px;
+    }
+  }
+.contacts__number{
+  margin-top: 20px;
+}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $background_red;
+  color: $color_white;
+  height: 100vh;
+  min-height: 800px;
+  padding: 0px 59px;
+  max-height: 1080px;
+
+  @media (max-width: 1110px) {
+    height: auto;
+    padding: 0px 26px;
+  }
+}
+
+.contacts__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  position: relative;
+  margin: 0px 59px 50px 0px;
+  font-weight: map-get($font-weights, "SemiBold");
+  @media (max-width: 1110px) {
+    font-size: 32px;
+    margin: 32px 59px 23px 0px;
+  }
+}
+
+.contacts__group {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1110px) {
+    flex-flow: column;
+  }
+}
+.contacts__email, .contacts__phone{
+  cursor: pointer;
+}
+.contacts__phone,
+.contacts__whatsapp,
+.contacts__email {
+  .contacts__group--title-icon {
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .contacts__group--title-icon-1 {
+      height: 34px;
+      @media (max-width: 1110px) {
+        height: 23px;
+      }
+    }
+    .contacts__group--title-icon-2 {
+      height: 40px;
+      @media (max-width: 1110px) {
+        height: 33px;
+      }
+    }
+    .contacts__group--title-icon-3 {
+      height: 24px;
+      @media (max-width: 1110px) {
+        height: 17px;
+      }
+    }
+
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .contacts__subtitle {
+    font-size: 24px;
+    font-weight: map-get($font-weights, "SemiBold");
+    text-transform: uppercase;
+
+    @media (max-width: 1110px) {
+      font-size: 20px;
+    }
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  border-radius: 15px;
+  min-height: 211px;
+  background: $background_white;
+  color: $color_black;
+  flex: 1;
+  padding: 28px 21px;
+
+  @media (max-width: 1110px) {
+    min-height: 145px;
+    padding: 16px 14px;
+  }
+}
+
+.contacts__phone,
+.contacts__whatsapp {
+  margin-right: 10px;
+
+  @media (max-width: 1110px) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__addresses {
+  .contacts__addresses--block {
+    line-height: 120%;
+    font-weight: map-get($font-weights, "Medium");
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .contacts__address {
+      .contacts__address--block {
+        .contacts__icon {
+          img {
+            width: 32px;
+            height: auto;
+          }
+        }
+        .contacts__street {
+          line-height: 120%;
+          font-size: 20px;
+          font-weight: map-get($font-weights, "SemiBold");
+          @media (max-width: 1110px) {
+            font-size: 16px;
+          }
+        }
+        display: flex;
+        gap: 12px;
+        flex-flow: row nowrap;
+      }
+      .contacts__description {
+        line-height: 120%;
+        font-size: 16px;
+        position: relative;
+        font-weight: map-get($font-weights, "Medium");
+        left: 44px;
+        @media (max-width: 1110px) {
+          font-size: 14px;
+        }
+      }
+      .contacts__office {
+        line-height: 120%;
+        font-size: 16px;
+        position: relative;
+        left: 44px;
+
+        @media (max-width: 1110px) {
+          font-size: 14px;
+        }
+      }
+
+      max-width: 445px;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    flex: 1;
+  }
+
+  display: flex;
+  margin-top: 120px;
+  flex-flow: row nowrap;
+
+  @media (max-width: 1110px) {
+    flex-flow: column nowrap;
+    margin-top: 35px;
+    margin-bottom: 26px;
+  }
+}
+
+.black-btn {
+  width: auto;
+
+  @media (max-width: 1110px) {
+    margin-top: 22px;
+    font-size: 14px;
+    padding: 9px 9px;
+    text-transform: lowercase;
+  }
+}
