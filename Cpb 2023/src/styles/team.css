@@ -1,0 +1,300 @@
+.team {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.team-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 47px;
+}
+
+.team__title {
+    font-size: 80px;
+    font-family: 'SequelSans-MediumHead';
+    font-weight: normal;
+    letter-spacing: 3%;
+    color: #FFFFFF;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 59px;
+    position: relative;
+    /* left: 59px; */
+    top: 27px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.team-all {
+    display: flex;
+    flex-direction: row;
+    margin: 72px 59px;
+    flex-wrap: wrap;
+}
+
+.team-all-one_block {
+    width: 25%;
+    height: 65vh;
+    background-color: #dcfefd !important;
+    /* background: url('../img/gradientTeamBackground.svg') no-repeat;
+    background-size: contain; */
+
+    /* opacity: 1; */
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.team-all-one_block:hover {
+    background-color: #dcfefd00 !important;
+    background: url('../img/gradientTeamBackground.png') no-repeat;
+    background-size: 105%;
+    transition: 0.6s;
+}
+.team-all-one_block:hover .team-all-one_block__name {
+    color: rgb(51, 129, 136);
+}
+.team-all-one_block:hover .team-all-one_block__name_text {
+    color: rgb(51, 129, 136);
+}
+
+.team-all-one_block:hover .team-all-one_block__img img {
+    opacity: 1;
+}
+
+/* .team-all-one_block:active {
+    background: url('../img/gradientTeamBackground.svg') no-repeat;
+    background-size: 105%;
+    transition: 0.6s;
+}
+
+.team-all-one_block:active .team-all-one_block__img img {
+    opacity: 1;
+} */
+
+.team-all-one_block__img {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    bottom: 0;
+}
+.team-all-one_block__img img {
+    /* width: 100%; */
+    /* object-fit: cover; */
+    height: 90%;
+    position: absolute;
+    bottom: -1px;
+    transform: scale(-1, 1);
+    left: 32px;
+    opacity: 0;
+    transition: 0.2s linear;
+
+    /* opacity: 0; */
+        /* height: 50%; */
+}
+
+.teamtextblock {
+    height: 20%;
+    width: 100%;
+}
+
+.team-all-one_block__name {
+    font-family: 'SequelSans-MediumHead';
+    font-weight: normal;
+    color: #1CACB9;
+    font-size: 64px;
+    text-transform: capitalize;
+    font-weight: 410;
+    font-size: 64px;
+    line-height: 89.5%;
+    position: relative;
+    text-align: left;
+    left: 23px;
+    top: 23px;
+}
+
+.team-all-one_block__name_text {
+    font-family: 'SequelSans-MediumHead';
+    font-weight: normal;
+    color: #1CACB9;
+    font-weight: 350;
+    font-size: 36px;
+    line-height: 89.5%;
+    position: relative;
+    top: 43px;
+    left: 23px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1510px) {
+    .team-all-one_block__name {
+        font-size: 56px;
+    }
+    .team-all-one_block__name_text {
+        font-size: 32px;
+    }
+    .team-all-one_block__img img {
+        left: 22px;   
+    }
+    .logoWelcome {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1034px) {
+    .team-all-one_block__name {
+        font-size: 52px;
+    }
+    .team-all-one_block__name_text {
+        font-size: 28px;
+    }
+    .team-all-one_block__img img {
+        left: 12px;   
+    }
+    .team-all-one_block {
+        width: 50%;
+    }
+    .team {
+        height: 100vh;
+    }
+    .team-all-one_block {
+        height: 45vh;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .team-all-one_block__name {
+        font-size: 48px;
+    }
+    .team-all-one_block__name_text {
+        font-size: 24px;
+    }
+    .team-all-one_block__img img {
+        left: 29%;
+        transform: scale(1, 1);
+        height: 120%;
+
+        /* right:10%;    */
+    }
+    .team-all-one_block {
+        width: 100%;
+    }
+    .team {
+        height: 200vh;
+    }
+    .team__title {
+        font-size: 42px;
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .team-container {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .team-all-one_block__img img {
+        left: 25%;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .team-all-one_block__img img {
+        left: 22%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .team-all-one_block__img img {
+        left: 19%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .team-all-one_block__img img {
+        left: 17%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .team-all-one_block__img img {
+        left: 15%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .team-all-one_block__img img {
+        /* left: 13%; */
+        right: 0 !important;
+        left: auto;
+        transform: scale(1, 1);
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .team-all-one_block__img img {
+        /* left: 2px; */
+        right: 0 !important;
+        left: auto;
+        height: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 470px) {
+    .team-all-one_block__img img {
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .team-all-one_block__img img {
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .team-all-one_block__img img {
+        height: 95%;
+    }
+    .team-all-one_block {
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .team-all-one_block__name {
+        font-size: 44px;
+    }
+    .team-all-one_block__name_text {
+        font-size: 20px;
+        width: 50%;
+    }
+    .team-all-one_block__img img {
+        /* left: -12px;    */
+        right: -40px !important;
+        left: auto;
+        height: 100%;
+    }
+    .team {
+        height: 170vh;
+    }
+    .team-all-one_block {
+        height: 35vh;
+    }
+    .team__title {
+        font-size: 30px;
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .logoWelcome {
+        margin-top: 0px;
+    }
+}

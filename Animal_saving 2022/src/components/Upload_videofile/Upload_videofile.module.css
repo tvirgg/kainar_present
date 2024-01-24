@@ -1,0 +1,164 @@
+.form{
+    width: 100%;
+}
+.form_item{
+    width: calc(100% - 10px) !important;
+    padding-left: 10px;
+    background-color: #000;
+    border-radius: 4px;
+    color: #f8f8f8;
+    height: 36px;
+    line-height: 20px;
+    transition: all 120ms ease-in-out 0s;
+}
+.container_h1{
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    letter-spacing: .075rem;
+    margin: 15px auto;
+}
+.container_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile_container__info{
+    margin-top: 30px;
+    width: 100%;
+    font-size: .75rem;
+    display: flex;
+    justify-content: space-between;
+}
+.edit{
+    display: block;
+    padding: 5px;
+}
+.edit_Svg{
+    fill: #6e6e6e;
+}
+.edit:hover .edit_Svg{
+    fill: #ff9900;
+}
+.save{
+    font-size: .813rem;
+    letter-spacing: .013rem;
+    line-height: 1.813rem;
+    min-width: 100px;
+    background: #ff9900;
+    color: #000000;
+    border: 1px solid transparent;
+    padding: 0 !important;
+    border-radius: 4px;
+    transition: 0.4s;
+    font-weight: 700;
+}
+.save:hover{
+    background: #ffffff;
+    color: black !important;
+    cursor: pointer;
+}
+.form_block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_block_item_sec_block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_block_item{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.form_block_item_span{
+    line-height: 20px;
+    width: 20%;
+    margin-right: 15px;
+    align-items: center;
+    color: #a0a0a0;
+    min-width: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: normal;
+    position: relative;
+    top: 8px;
+}
+.form_item_select{
+    padding-left: 12px !important;
+    padding-right: 20px;
+}
+.form_item_select{
+}
+.heu{
+    padding: 15px;
+}
+.eror{
+    position: relative;
+    left: 2px;
+    top: 6px;
+    color: #842323;
+    font-weight: 700;
+    font-size: .95rem;;
+}
+.datepicker{
+    width: 100%;
+}
+.examplecustominput{
+    width: calc(100% - 10px);
+    height: 38px;
+    background: #000000;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+.rastastripes{
+    background: black;
+}
+.selectdatecontainer{
+    position: relative;
+    left: 5%;
+    line-height: 22px;
+}
+.some:after{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #212121;
+    background: #212121;
+    left: 10%;
+    top: 0.2%;
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(
+            135deg
+    );
+}
+
+@media screen and (max-width: 740px){
+    .form_block_item_span{
+        width: 190px;
+    }
+}
+@media screen and (max-width: 480px){
+    .form_block_item{
+        display: flex;
+        flex-direction: column;
+    }
+    .form_block_item_span{
+        width: 100%;
+        padding-left: 5px;
+        margin-bottom: 15px;
+    }
+}

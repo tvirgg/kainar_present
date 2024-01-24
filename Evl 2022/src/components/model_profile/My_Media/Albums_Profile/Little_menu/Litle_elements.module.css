@@ -1,0 +1,24 @@
+.albumes_photos_item{
+    display: block;
+    margin: 3px 3px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    background-position: center;
+}
+.albumes_photos_item:after{
+    bottom: 0;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 3px;
+    transition: opacity .3s;
+    width: 36px;
+    height: 36px;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 2;
+}
+.albumes_photos_item_active:after{
+    opacity: 0;
+}

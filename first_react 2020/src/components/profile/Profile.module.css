@@ -1,0 +1,34 @@
+.profile_img{
+    width: 300px;
+}
+.profile_name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.status{
+    float: right;
+    margin-top: 20px;
+}
+.profile_select_image_block{
+    margin-top: 40px;
+}
+.select_Photobtn {
+    display: none;
+}
+.custom_file_upload {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #244181 inset, 0 0 0 0 #244181;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    transition: .35s ease-in-out;
+}
+.custom_file_upload:hover {
+    box-shadow: 0 0 5px 0 #F137A6 inset, 0 0 5px 2px #F137A6;
+    color: #F137A6;
+}

@@ -1,0 +1,126 @@
+body{
+    background: #0b0b0b !important;
+    font-family: Arial,Helvetica,sans-serif !important;
+    color: white !important;
+}
+a{
+    color: white !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: none;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+#root, .staittohell{
+    height: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 !important;
+}
+input{
+    border: none!important;
+}
+input:focus{
+    border: none!important;
+    outline:none!important;
+}
+
+*, :after, :before {
+    box-sizing: inherit !important;
+}
+.body_block{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.body_block_paddung{
+    padding-right: 17px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+#main_row{
+    justify-content: center;
+}
+.header{
+    flex: 0 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+}
+@media (max-width: 1080px) {
+    .close_block{
+        padding-right: 15px;
+    }
+}
+@media screen and (pointer: coarse){
+    .body_block_paddung{
+        padding-right: 0;
+    }
+    .close_block{
+        padding-right: 0;
+    }
+}
+.close_block_selector{
+    display: block;
+    width: 100vw;
+    height: 200vh;
+    position: absolute;
+    top: 54px;
+    z-index: 101;
+    background: #000000;
+    opacity: 0.6;
+    transition: .4s;
+}
+

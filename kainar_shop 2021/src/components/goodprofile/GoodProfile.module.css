@@ -1,0 +1,96 @@
+.num_block{
+    margin-top: 5px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.cards_block{
+    margin-bottom: 200px;
+    font-family: 'PT Mono', sans-serif;
+}
+.basket_block{
+    height: 100%;
+    background-color: #6c757d;
+    margin-left: -60px;
+    text-align: center;
+}
+.bascket_info{
+    padding-top: 50px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.bascket_info p{
+    font-weight: bold;
+}
+
+h4{
+    font-size: 20px;
+}
+.basket_block h1{
+    font-size: 40px;
+}
+.prof_c{
+    margin-top: 60px;
+    font-family: Cyber_2;
+    color: #ad89ea;
+    text-shadow: 1px 1px 1px black, 0 0 0.2em #000000; /* Параметры тени */
+}
+.main_lable{
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-right: auto;
+    font-size: 70px;
+}
+.product_slider_arrow_right{
+    opacity: 1;
+}
+.galer_button{
+    display: block;
+    height: 48px;
+    width: 48px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: white 2px solid;
+    text-align: center;
+    align-items: center;
+}
+.galer_block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.galer_button{
+    margin-top: 20%;
+}
+.galery{
+    width: 75%;
+}
+.info_block{
+    color: #ad89ea;
+    text-shadow: 1px 1px 1px black, 0 0 0.02em #000000; /* Параметры тени */
+}
+.info_block h2{
+    font-size: 30px;
+}
+.info_block__price{
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    max-width: 300px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.info_block__price h2{
+    position: relative;
+    top: 5px;
+}
+.in_bask{
+    color: #6dabd9;
+    text-shadow: 1px 1px 1px black, 0 0 0.02em #000000; /* Параметры тени */
+}
+.btn_block{
+    padding-left: 15px;
+    margin-bottom: 150px;
+}

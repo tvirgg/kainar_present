@@ -1,0 +1,98 @@
+.Roadmap{
+    position: relative;
+    background: url("../../images/Roadmap.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.Roadmap_top{
+    text-align: center;
+}
+.Roadmap_top_h1{
+    font-size: 56px;
+    line-height: 68px;
+    margin-bottom: 37px;
+    margin-top: 80px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #777777;
+}
+.Roadmap_top_p{
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+.yellow{
+    color: #DCD275;
+}
+.map_item_h1{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #777777;
+    font-size: 46px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+.map_item{
+    background: rgba(171, 171, 171, 0.3);
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 50px 60px;
+    margin: 50px 0;
+}
+.map_item_p{
+    font-size: 24px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #777777;
+}
+.teme{
+    margin-bottom: 20px;
+}
+@media (max-width: 1020px) {
+
+}
+@media (max-width: 740px) {
+    .map_item{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .map_item_p{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+@media (max-width: 495px) {
+    .map_item{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .map_item_h1{
+        font-size: 32px;
+    }
+    .map_item_p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .Roadmap_top_h1{
+        font-size: 30px;
+        line-height: 48px;
+    }
+    .Roadmap_top_p{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 390px) {
+
+}

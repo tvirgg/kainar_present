@@ -1,0 +1,79 @@
+.wrap{
+    width: 100%;
+}
+.container{
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 1600px){
+    .container {
+        width: 1568px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.row_item{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+@media screen and (max-width: 920px) {
+    .isedit_block{
+        position: absolute;
+        top: 100px;
+        left: -320px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .isedit_block{
+        top: 115px;
+        left: -200px;
+    }
+    .container{
+        padding: 10px;
+    }
+}
+.row{
+    margin: 12px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+@media screen and (min-width: 1600px){
+
+}
+.first_col{
+    display: flex;
+    flex-direction: column;
+    width: 49.5%;
+    margin-right: 6px;
+}
+.second_col{
+    display: flex;
+    flex-direction: column;
+    width: 49.5%;
+    margin-left: 6px;
+}
+@media screen and (max-width: 980px){
+    .row_item{
+        display: flex;
+        flex-direction: column;
+    }
+    .first_col{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .second_col{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        margin-top: 14px;
+    }
+}

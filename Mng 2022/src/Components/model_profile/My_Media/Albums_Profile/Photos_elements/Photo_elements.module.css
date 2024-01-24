@@ -1,0 +1,61 @@
+.albumes_photos_item{
+    display: block;
+    margin: 3px 3px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    background-position: center;
+}
+.albumes_photos_block{
+    display: block;
+    position: relative;
+}
+.edit_block{
+    padding: 5px;
+    width: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    left: calc(100% - 27px);
+}
+.chekbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.chekbox+label {
+    align-items: center;
+    user-select: none;
+}
+.chekbox+label::before {
+    position: relative;
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.42);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    transition: 0.4s;
+}
+.chekbox:checked+label::before {
+    transition: 0.4s;
+    background-color: #ffffff;
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000'%3E%3Cpath d='M100 27.7L85.3 13l-45 45.1-25.6-25.6L0 47.1l40.3 40.3' /%3E%3C/g%3E%3C/svg%3E");
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.chekbox:not(:disabled):active+label::before {
+    background-color: #ffffff;
+    border-color: #000000;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.chekbox:disabled+label::before {
+    background-color: #e9ecef;
+}

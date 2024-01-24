@@ -1,0 +1,201 @@
+.chat_display{
+    background: #363636;
+    display: flex;
+    flex-direction: column;
+}
+.chat_list{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 188px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: inherit;
+    overscroll-behavior: none;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+@media screen and (max-width: 980px) {
+    .chat_list{
+        height: calc(70vh - 235px);
+    }
+}
+.chat_list::-webkit-scrollbar {
+    width: 4px;
+}
+.chat_list::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #282828;
+}
+.chat_list::-webkit-scrollbar-thumb {
+    background-color: #282828;
+    border-radius: 2px;
+    height: 20% !important;
+}
+.chat_list:hover::-webkit-scrollbar-thumb {
+    background-color: #9a9595;
+}
+.chat_list__item{
+    border-left:  2px solid #363636;
+    padding: 6px 25px;
+    flex-direction: row;
+    line-height: 1.25rem;
+    font-size: .813rem !important;
+}
+.my_massage{
+    border-left: 2px solid #504E4E;
+    background: #504E4E;
+}
+.chat_list__item:last-child {
+margin-bottom: 6px;
+}
+.chat_list__item_name{
+    font-size:  .813rem;
+    font-weight: 700;
+    color: #9f9f9f;
+    margin-right: 6px;
+}
+.chat_list__item_text{
+    font-size:  .813rem;
+}
+.chat__inputblock{
+    width: calc(100% - 43px);
+    padding: 14px 20px;
+    background: #2d2d2d;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+}
+.chat__inputblock_container{
+    display: flex;
+    flex-direction: row;
+    transition: 0.2s;
+}
+.chat__input{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #0b0b0b;
+    height: 40px;
+    border-radius: 4px 0px 0px 4px;
+    color: #ffffff;
+    padding: 0 15px;
+}
+.chat__inputblock__btn{
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 40px;
+    padding-left: 10px;
+    height: 40px;
+    background: #0b0b0b;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goldmember_text{
+    color: gold !important;
+}
+.model_text{
+    color: #ed7d31 !important;
+}
+.admin_text{
+    color: #ff0000 !important;
+    font-weight: 700 !important;
+}
+.funclub_text{
+    color: #71ad47 !important;
+    font-weight: 700 !important;
+}
+.thousand{
+    color: #7030a0 !important;
+    font-weight: 700 !important;
+}
+.twohundred{
+    color: #cc059e !important;
+    font-weight: 700 !important;
+}
+.fifty{
+    color: #0070c0 !important;
+    font-weight: 700 !important;
+}
+.atleast{
+    color: #5b9bd5 !important;
+    font-weight: 700 !important;
+}
+.similar{
+    color: #a5a5a6 !important;
+    font-weight: 700 !important;
+}
+
+.chat_list_donate_item{
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    border-left:  2px solid #66af33;
+}
+.chat_list_donate_item p{
+    font-size: .813rem;
+    line-height: 1.125rem;
+    color: #e1e1e1;
+}
+.vibration_item{
+    border-left:  2px solid #66af33;
+    font-size: .813rem;
+}
+.vibration_item p{
+    color: rgba(248,248,248,.6);
+}
+.vibration_item span{
+    color: #f8f8f8;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 980px) {
+    .chat_list{
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    .chat__inputblock{
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .chat__inputblock{
+        width: calc(100% - 43px);
+    }
+    .chat_display{
+        padding-top: 0;
+    }
+    .chat__input{
+        background: #0b0b0b;
+    }
+}
+.chat__inputblock__btn_svg{
+    fill: #909090;
+    transition: 0.2s;
+}
+.chat__inputblock__btn_svg:hover{
+    fill: #ffffff;
+}
+.chat__inputblock__btn{
+    cursor: pointer;
+}
+@media screen and (max-width: 430px) {
+    .chat__inputblock{
+        width: calc(100% - 23px);
+        padding: 14px 10px;
+    }
+    .chat__input{
+        font-size: 16px !important;
+    }
+}

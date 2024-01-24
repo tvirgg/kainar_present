@@ -1,0 +1,140 @@
+.albumes{
+    margin: 50px 0;
+    width: 100%;
+}
+.albumes_container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.albumes_lable{
+    display: flex;
+}
+.albumes_lable a{
+    margin-left: 1px;
+}
+.albumes_lable a:hover{
+    text-decoration: underline white !important;
+}
+.albumes_photo_category__lable{
+    display: flex;
+}
+.albumes_photo_category__lable svg{
+    padding: 0 10px;
+}
+.albumes_photos__container{
+    padding: 20px 0;
+    margin-right: 12px;
+}
+.albumes_photos__container a{
+    margin-bottom: 30px !important;
+}
+.albumes_photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.galer_viewer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+.galer_viewer_container{
+    height: 90vh;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow_left{
+    width: 9vw;
+    height: 85vh;
+    display: flex;
+    cursor: pointer;
+    opacity: .6;
+    transition: 0.2s;
+}
+.arrow_left svg{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+.arrow_left:hover{
+    opacity: 1;
+}
+.arrow_right{
+    width: 9vw;
+    height: 85vh;
+    display: flex;
+    cursor: pointer;
+    opacity: .6;
+    transition: 0.2s;
+}
+.arrow_right svg{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.arrow_right:hover{
+    opacity: 1;
+}
+.galer_photo{
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 85vw;
+    height: 85vh;
+}
+.galer_escape{
+    position: absolute;
+    top: 0;
+    z-index: 400;
+    left: calc(100vw - 80px);
+    opacity: .6;
+    height: 80px;
+    width: 80px;
+    transition: 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galer_escape svg{
+    display: block;
+}
+.galer_escape:hover{
+    cursor: pointer;
+    opacity: 1 !important;
+}
+.galer_viewer_stick{
+    height: 10vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20px;
+}
+@media screen and (max-width: 600px) {
+    .albumes_container{
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 350px) {
+    .albumes_container{
+        margin-top: 10px;
+
+    }
+}

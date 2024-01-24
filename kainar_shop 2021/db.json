@@ -1,0 +1,88 @@
+{
+  "goodsdata": {
+    "ind_imp":[
+      {
+        "id": 1, "category": "ind_imp", "name": "Eye-implant", "price": 100,  "photourl": [
+        "https://i.postimg.cc/C1WnsYVt/1.jpg",
+        "https://i.postimg.cc/3rvvJyXH/2.jpg",
+        "https://i.postimg.cc/PrbvYBV3/3.jpg",
+        "https://i.postimg.cc/qMHCtkw6/4.jpg"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
+      {
+        "id": 2, "category": "ind_imp", "name": "Foot-implant", "price": 200, "photourl": [
+        "https://i.postimg.cc/hPGR1mpk/1.jpg",
+        "https://i.postimg.cc/LXSrYgJ0/2.jpg",
+        "https://i.postimg.cc/tJCwD0t3/3.jpg",
+        "https://i.postimg.cc/C149jMDM/4.jpg"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
+      {
+        "id": 3, "category": "ind_imp", "name": "Hand-implant", "price": 1500, "photourl": [
+        "https://i.postimg.cc/cJ7dbSY2/1.jpg",
+        "https://i.postimg.cc/yxxBx35C/2.jpg",
+        "https://i.postimg.cc/yxGKZY4g/3.jpg",
+        "https://i.postimg.cc/ryZMbg0V/4.jpg"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
+    ],
+    "intobody_imp":[
+      {
+        "id": 1, "category": "intobody_imp", "name": "Intohand-implant", "price": 100, "photourl": [
+        "https://i.postimg.cc/4dFq8L8j/1.jpg",
+        "https://i.postimg.cc/mZCK3wYp/2.gif"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": 2, "category": "intobody_imp", "name": "Intohead-implant", "price": 200,  "photourl": [
+        "https://i.postimg.cc/BbbL36BX/1.jpg",
+        "https://i.postimg.cc/vH1gS4mK/2.jpg",
+        "https://i.postimg.cc/TYZL8TL3/3.jpg"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      }
+    ],
+    "complect_imp":[
+      {"id": 1,  "name": "Kits R 11", "price": 4000, "photourl": [
+        "https://i.postimg.cc/RhTBgQHt/1.jpg",
+        "https://i.postimg.cc/qMk0zYPx/2.jpg" ], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
+      {"id": 2, "category": "complect_imp", "name": "Kits T 22", "price": 9000, "photourl": [
+        "https://i.postimg.cc/sfmq02L5/1.jpg",
+        "https://i.postimg.cc/Nf0ShchS/2.jpg"
+      ], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
+      {"id": 3, "category": "complect_imp", "name": "Kits M 33", "price": 10000, "photourl": [
+        "https://i.postimg.cc/HLS39JnL/1.jpg",
+        "https://i.postimg.cc/Twp07R5J/2.jpg"
+      ], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
+    ],
+    "utilits": [
+      {"id": 1, "category": "utilits", "name": "Robo-fist C 10", "price": 100, "photourl": [
+        "https://i.postimg.cc/RhG0WzG2/1.jpg",
+        "https://i.postimg.cc/QNqC4psS/2.jpg",
+        "https://i.postimg.cc/L66Xrn8S/3.jpg",
+        "https://i.postimg.cc/Gh72rd4y/4.jpg",
+        "https://i.postimg.cc/Gtb23pPk/5.jpg"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
+      {"id": 2, "category": "utilits", "name": "Robo-fists C 20", "price": 200, "photourl": [
+        "https://i.postimg.cc/KjmPXxRW/1.jpg",
+        "https://i.postimg.cc/Cx54LhmT/2.jpg",
+        "https://i.postimg.cc/RVV7XCr6/3.jpg",
+        "https://i.postimg.cc/wB34P5SN/4.jpg"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
+      {"id": 3, "category": "utilits", "name": "Cyber glasses 12", "price": 300, "photourl": [
+        "https://i.postimg.cc/MKWC5BK7/1.jpg",
+        "https://i.postimg.cc/65jmh1PK/2.jpg",
+        "https://i.postimg.cc/zGyP2Fmg/3.jpg"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
+      {"id": 4, "category": "utilits", "name": "Cyber glasses M 8", "price": 300, "photourl": [
+        "https://i.postimg.cc/zf0bLKBx/1.jpg",
+        "https://i.postimg.cc/C15Zb5nS/2.jpg",
+        "https://i.postimg.cc/Px7CyH1Z/3.jpg"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
+      {"id": 5, "category": "utilits", "name": "Cyber glasses M 16", "price": 300, "photourl": [
+        "https://i.postimg.cc/F157txWH/1.jpg",
+        "https://i.postimg.cc/gcfDkF1n/2.jpg",
+        "https://i.postimg.cc/hPT0XZqM/3.jpg"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
+      {"id": 6, "category": "utilits", "name": "Cyber glasses M 32", "price": 300, "photourl": [
+        "https://i.postimg.cc/1t7qdw18/1.jpg",
+        "https://i.postimg.cc/VvSCPvzD/2.jpg",
+        "https://i.postimg.cc/x8WbfQCY/3.jpg",
+        "https://i.postimg.cc/7Y22B5sL/4.jpg"], "pieces": 0, "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
+    ]
+  },
+  "Posts": [
+    { "lable":"Who are we ?", "text" : "We are a consultancy that helps organisations achieve exceptional results by finding and applying practical solutions to complex business and people challenges. We interrupt existing patterns of thinking and instigate powerful, sustainable change.  We also help you to communicate with and inspire your employees, creating an environment where they choose to become engaged.\n \n  Our down to earth, common sense approach will give you the clarity to take action which will help your organisation grow and your people succeed. We have extensive expertise which is grounded in the reality of sitting on your side of the desk.", "date": "12.11.2040", "authorname": "GIZON DENALT", "position": "Director", "id": 1},
+    { "lable":"Our philosophy", "text": "Focus on the user and all else will follow.\n It’s best to do one thing really, really well.\n Fast is better than slow.\n Democracy on the web works.\n You don’t need to be at your desk to need an answer.\n You can make money without doing evil.\n There’s always more information out there.\n The need for information crosses all borders.\n You can be serious without a suit.\n Great just isn’t good enough.", "authorname": "Mike Simon", "date": "01.24.2041", "id": 2, "position": "Loader"},
+    { "lable":"Why choose us?", "text": "We pride ourselves on helping you to deliver exceptional business results within a short time-frame which have a long-lasting impact.\n \n We are transformative, challenging and professional – with a sense of humour! We make you stop and think.\n \n Our aim is to transfer skills to you so that you can develop in-house expertise.\n \n We are confident that the 30,000 people that we have worked with in the last 18 years will say the same.", "authorname": "Rebecca Lokon", "date": "21.02.2041", "id": 3, "position": "Junior Manager"},
+    { "lable":"A Valentine Meal on our company", "text": "Valentine’s Day is approaching. And even though it seems life could get back to a new “normal” sometime this year, it won’t be before Cupid arrives.\n For many years, we have been publicly demonstrating our devotion for food safety and sustainability. To affirm our commitment, we decided to make a simple dinner of steak, salad and (of course) wine to woo you with some of the work we’re doing.", "authorname": "Jery Wolker", "date": "9.01.2041", "id": 4, "position": "Post worker"},
+    { "lable":"Why we Need a Blog", "text": "A company blog is simply a blog that’s attached to your business in some way. Usually, it will be a part of your larger business website. \n One of the best things about company blogs is that they can be as unique as your business. Depending on your brand and niche, you could use your blog for a variety of purposes. It could be a news resource or a collection of in-depth technical tutorials. No matter what type of content you publish, you can use your blog to create a unique voice for your business and brand.\n \n If you’re asking yourself why a company would need a blog in the first place, you might be surprised to learn that there are several benefits to corporate blogging (just check out these business blogging statistics)! Having a company blog makes it possible to: \n Drive traffic and awareness to your site by using related keywords. It also helps you build more backlinks, as others are likely to share your posts on their own websites.\n Increase your lead generation. Blogging helps grow your audience, which means you can attract new leads. In fact, companies that blog regularly get more leads than those who don’t.\n Provide value to your customers and readers. By producing high-quality content, you can entertain and inform your audience.\n Communicate news and interesting information. Having your own blog can be a smart way to increase transparency about the goings-on in your business and to build connections with your users.\n Establish yourself as an authority. If you produce smart and helpful content, you can build your company’s image as an authority in your field, industry, or niche.", "authorname": "Artem Ganeyev", "date": "20.03.2043", "id": 5, "position": "Senior director"}
+  ]
+}
+

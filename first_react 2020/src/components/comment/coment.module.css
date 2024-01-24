@@ -1,0 +1,23 @@
+.num_block{
+    margin-top: 5px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.cards_block{
+    margin-bottom: 200px;
+}
+.basket_block{
+    height: 100%;
+    background-color: #6c757d;
+    margin-left: -60px;
+    text-align: center;
+}
+.bascket_info{
+    padding-top: 50px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.bascket_info p{
+    font-weight: bold;
+}

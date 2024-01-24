@@ -1,0 +1,479 @@
+.TheChillClubRules_block {
+  position: relative;
+  /* position: absolute; */
+  height: 100vh;
+  width: 100%;
+  background-color: #00c1b6;
+  /* margin-top: 45vh; */
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  /* overflow: hidden; */
+}
+
+.TheChillClubRules_block_title {
+  /* width: 31%; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.TheChillClubRules_block_title_h1 {
+  font-family: "SequelSans-MediumHead";
+  font-weight: 365;
+  font-size: 200px;
+  line-height: 100%;
+  text-align: justify;
+  text-transform: capitalize;
+  background: linear-gradient(162.63deg, #00ada3 27.67%, #00726b 108.86%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  /* text-fill-color: transparent; */
+}
+
+.TheChillClubRules_block_text {
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  /* display: none; */
+  transition: 1s;
+  width: 0;
+  position: relative;
+  background-color: #d7fffd;
+}
+
+:root {
+  --app-height: 100%;
+}
+
+/* .block {
+    height: 100vh;
+    height: var(--app-height);
+} */
+
+.TheChillClubRules_block_text_text {
+  position: absolute;
+  font-family: "SequelSans-LightHead";
+  font-weight: normal;
+  color: #00c6bc;
+  width: 372px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 89%;
+  font-size: 36px;
+  text-align: left;
+  text-transform: capitalize;
+  left: 68px;
+  top: 288px;
+}
+
+.numBlockNm {
+  /* right: 75px;  */
+}
+
+.active {
+  /* display: flex; */
+  width: 52%;
+}
+
+.blockContainer {
+  display: flex;
+  flex-direction: row;
+  width: 93%;
+}
+
+.block_number_conteiner_block_number {
+  font-family: "SequelSans-LightHead";
+  font-weight: normal;
+  font-size: 48px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.block_number_conteiner_block_number div {
+  position: absolute;
+  bottom: 244px;
+  /* right: 75px; */
+}
+
+.first {
+  /* width: 33%; */
+  width: 169px;
+  min-width: 169px;
+  height: 100%;
+  background-color: #92f4ef;
+  z-index: 1;
+}
+
+.second {
+  /* width: 33%; */
+  width: 169px;
+  min-width: 169px;
+  height: 100%;
+  background-color: #32dcd2;
+  z-index: 2;
+}
+
+.third {
+  /* width: 33%; */
+  min-width: 169px;
+  width: 169px;
+  height: 100%;
+  background-color: #00c1b6;
+  z-index: 3;
+}
+
+.textBlockNumber {
+  position: absolute;
+  /* opacity: 0; */
+  width: 409px;
+  /* left: -338%; */
+  text-align: left;
+
+  font-family: "SequelSans-LightHead";
+  font-weight: normal;
+  /* width: 13%; */
+  font-size: 32px;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+  /* bottom:  */
+  /* display: none; */
+  transition: 1s;
+  z-index: -1;
+  /* min-width: 169px; */
+  left: 38%;
+  height: 0vh;
+}
+.textBlockNumber .topTextBlockNumber {
+  position: relative;
+  top: 200px;
+}
+.first_textBlockNumber {
+  position: fixed;
+  color: #00a5af;
+  /* left: -612px; */
+  opacity: 0;
+}
+.second_textBlockNumber {
+  position: fixed;
+  color: #ffffff;
+  /* left: -762px; */
+  opacity: 0;
+}
+.third_textBlockNumber {
+  position: fixed;
+  color: #ffffff;
+  /* left: -812px; */
+  opacity: 0;
+}
+.boldFontWeight {
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 20px;
+}
+
+.Vector1TCCR {
+  position: absolute;
+  left: 324px;
+  z-index: 1100;
+}
+
+.Vector2TCCR {
+  position: absolute;
+  z-index: 1100;
+}
+
+.Vector3TCCR {
+  position: absolute;
+  z-index: 1100;
+  /* top: 54px; */
+  left: 374px;
+  padding-top: 50px;
+}
+
+.scrollICON {
+  display: none;
+}
+
+.MOBILE_TheChillClubRules_block_text {
+  display: none;
+}
+.MOBILE_textBlockNumber {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+}
+.MOBILE_zero_textBlockNumber {
+  background-color: #d9fffd;
+}
+.MOBILE_first_textBlockNumber {
+  background-color: #9af5f1;
+}
+.MOBILE_second_textBlockNumber {
+  background-color: #32dcd2;
+}
+.MOBILE_third_textBlockNumber {
+  background-color: #00c1b6;
+}
+.MOBILE_zero_textBlockNumber .MOBILE_topTextBlockNumber {
+  color: #00c6bc;
+  /* height: 100vh;
+    min-height: -webkit-fill-available; */
+
+  /* height: var(--app-height); */
+}
+.MOBILE_first_textBlockNumber .MOBILE_topTextBlockNumber {
+  color: #00a5af;
+  /* height: 100vh; */
+  /* height: var(--app-height); */
+  /* min-height: -webkit-fill-available; */
+}
+.MOBILE_second_textBlockNumber .MOBILE_topTextBlockNumber {
+  color: #ffffff;
+  /* height: 100vh; */
+  /* height: var(--app-height); */
+  /* min-height: -webkit-fill-available; */
+}
+.MOBILE_third_textBlockNumber .MOBILE_topTextBlockNumber {
+  color: #ffffff;
+  /* height: 100vh; */
+  /* height: var(--app-height); */
+  /* min-height: -webkit-fill-available; */
+}
+.MOBILE_topTextBlockNumber {
+  font-family: "SequelSans-LightHead";
+  font-weight: normal;
+  width: 372px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 89%;
+  font-size: 36px;
+  text-align: left;
+  text-transform: capitalize;
+  position: relative;
+  left: 57px;
+  top: 216px;
+}
+.scrollICON_scroll {
+  display: flex;
+  /* position: relative; */
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 10%;
+  /* left: 50%; */
+  width: 124px;
+  height: 64px;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 1510px) {
+  .block_number_conteiner_block_number {
+    font-size: 42px;
+  }
+  .first {
+    width: 129px;
+    min-width: 129px;
+  }
+  .second {
+    width: 129px;
+    min-width: 129px;
+  }
+  .third {
+    width: 129px;
+    min-width: 129px;
+  }
+  .TheChillClubRules_block_title_h1 {
+    font-size: 156px;
+  }
+  .TheChillClubRules_block_text_text {
+    left: 18px;
+    font-size: 24px;
+    /* flex-wrap: wrap; */
+    position: absolute;
+    width: auto;
+  }
+  .numBlockNm {
+    /* right: 57px;  */
+  }
+  /* .boldFontWeight {
+        font-size: 32px;
+    } */
+}
+
+@media only screen and (max-width: 1034px) {
+  .block_number_conteiner_block_number {
+    font-size: 36px;
+  }
+  .first {
+    width: 109px;
+    min-width: 109px;
+  }
+  .second {
+    width: 109px;
+    min-width: 109px;
+  }
+  .third {
+    width: 109px;
+    min-width: 109px;
+  }
+  .TheChillClubRules_block_title_h1 {
+    font-size: 112px;
+  }
+  .boldFontWeight {
+    font-size: 28px;
+  }
+  .numBlockNm {
+    /* right: 49px;  */
+  }
+}
+
+@media only screen and (max-width: 854px) {
+  .TheChillClubRules_block_title_h1 {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .MOBILE_topTextBlockNumber {
+    font-size: 28px;
+  }
+  .block_number_conteiner_block_number {
+    font-size: 30px;
+  }
+  .first {
+    width: 89px;
+    min-width: 89px;
+  }
+  .second {
+    width: 89px;
+    min-width: 89px;
+  }
+  .third {
+    width: 89px;
+    min-width: 89px;
+  }
+  .TheChillClubRules_block_title_h1 {
+    font-size: 68px;
+  }
+  .TheChillClubRules_block_text {
+    display: none;
+  }
+  .block_number_conteiner_block_number {
+    display: none;
+  }
+  .TheChillClubRules_block_title {
+    width: 100%;
+    height: 100vh;
+  }
+  .TheChillClubRules_block_title_h1 {
+    font-size: 200px;
+    position: relative;
+    left: 10%;
+    top: -10%;
+  }
+  .scrollICON {
+    display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 10%;
+    /* left: 50%; */
+    width: 124px;
+    height: 64px;
+    z-index: 1000;
+  }
+  .scrollICON_scroll {
+    width: 124px;
+    height: 64px;
+  }
+  .TheChillClubRules_block {
+    flex-direction: column;
+    height: 500vh;
+  }
+  .MOBILE_TheChillClubRules_block_text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .TheChillClubRules_block_title_h1 {
+    font-size: 160px;
+  }
+  .scrollICON {
+    width: 104px;
+    height: 54px;
+    bottom: 126px;
+  }
+  .scrollICON_scroll {
+    width: 104px;
+    height: 54px;
+  }
+  .MOBILE_topTextBlockNumber {
+    font-size: 24px;
+    width: 80%;
+    top: 166px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .TheChillClubRules_block_title_h1 {
+    font-size: 150px;
+    left: 5%;
+  }
+  .scrollICON {
+    width: 94px;
+    height: 49px;
+    bottom: 86px;
+  }
+  .scrollICON_scroll {
+    width: 94px;
+    height: 49px;
+    bottom: 126px;
+  }
+  .MOBILE_topTextBlockNumber {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .TheChillClubRules_block_title_h1 {
+    margin-top: 40px;
+    font-size: 120px;
+    left: 5%;
+  }
+  .scrollICON {
+    width: 74px;
+    height: 37px;
+    bottom: 56px;
+  }
+  .scrollICON_scroll {
+    width: 74px;
+    height: 37px;
+    bottom: 10%;
+  }
+  .MOBILE_topTextBlockNumber {
+    width: 65%;
+  }
+}

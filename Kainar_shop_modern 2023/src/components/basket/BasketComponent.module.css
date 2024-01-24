@@ -1,0 +1,69 @@
+.BasketComponent{
+    background-color: #1c1c1c;
+    font-family: Cyber_3, serif;
+    color: white;
+    min-height: calc(100vh - 320px);
+}
+.BasketComponent_h1{
+    font-size: 50px;
+    margin-top: 10px;
+}
+@media (max-width: 766px) {
+    .BasketComponent__label_block{
+        padding-top: 20px !important;
+    }
+    .BasketComponent_h1{
+        padding-top: 20px !important;
+    }
+}
+@media (max-width: 466px) {
+    .BasketComponent_h1{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+}
+.item_info, .first_item_info{
+display: flex;
+}
+.item_info{
+    width: 100%;
+    justify-content: space-between;
+    height: 200px;
+}
+.item_info_img img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+.info{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+h2{
+    font-size: 30px;
+}
+.info_sec{
+    margin-top: 10px;
+    float: right;
+}
+.btn_block{
+    margin-left: 20px;
+}
+.bsk_item__mainb{
+    margin-bottom: 40px;
+}
+.still{
+    margin-top: 200px;
+text-align: center;
+}
+.oreder__btn{
+    margin-top: 120px;
+    text-align: right;
+    margin-bottom: 120px;
+}
+.oreder__btn button{
+padding: 10px;
+}
+.BasketComponent__label_block{
+    margin-bottom: 50px;
+}

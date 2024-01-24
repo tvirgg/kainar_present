@@ -1,0 +1,101 @@
+.chat_kist_display{
+    padding-top: 20px;
+    background: #363636;
+}
+.chat_list{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: inherit !important;
+    overscroll-behavior: none;
+    height: calc(100vh - 100px);
+}
+@media screen and (max-width: 980px) {
+    .chat_list{
+        height: calc(70vh - 235px);
+    }
+}
+.chat_list::-webkit-scrollbar {
+    width: 4px;
+}
+.chat_list::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #282828;
+}
+.chat_list::-webkit-scrollbar-thumb {
+    background-color: #282828;
+    border-radius: 2px;
+    height: 20% !important;
+}
+.chat_list:hover::-webkit-scrollbar-thumb {
+    background-color: #9a9595;
+}
+.chat_list__item{
+    padding: 7px 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.chat_list__item_text{
+    font-size:  .813rem;
+}
+.watching_now__container{
+    padding: 10px 25px;
+}
+.watching_now__container_h2{
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 21px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.watching_now__container_p{
+    color: #a3a3a3;
+    cursor: default;
+    font-weight: 400;
+    font-size: .813rem;
+    line-height: 1.375rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.watching_now__container_span{
+    color: white;
+    margin-left: 4px;
+}
+.watching_now__container_svg{
+    position: relative;
+    top: 3px;
+    margin: 0 3px;
+}
+.chat_list__item_ava{
+    margin-right: 10px;
+    height: 22px;
+}
+.chat_list__item_h2{
+    font-size: .813rem;
+}
+.color_league_bronze {
+    color: #de884a;
+    fill: #de884a !important;
+}
+.color_league_grey {
+    color: #9f9f9f;
+    fill: #9f9f9f !important;
+}
+.color_league_silver {
+    color: #b2cade;
+    fill: #b2cade !important;
+}
+.color_league_gold {
+    color: #ffad22;
+    fill: #ffad22 !important;
+}
+.color_league_royal {
+    color: #ff1a1a;
+    fill: #ff1a1a !important;
+}

@@ -1,0 +1,148 @@
+.gallery_Block {
+  height: auto;
+  width: 90%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 1;
+}
+.gallery {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.capybara_none {
+  margin: 0;
+  /* background: url('../img/light_yellow_back.png'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  /* background-color: #ECFFE6; */
+  position: relative;
+  width: 25%;
+  height: 50%;
+  top: -2px;
+  opacity: 1;
+  cursor: pointer;
+  /* transition: 4s; */
+}
+
+.rectOparcity {
+  opacity: 1;
+  /* background-size: 100% 100%; */
+  background-repeat: repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+
+.filterimage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-image: url("../img/capybara_none.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* bottom: -4px; */
+  /* filter: blur(10px); */
+
+  /* transition: 1s; */
+}
+
+.numBlockNm {
+  transition: 0.3s;
+}
+
+.filter_gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  /* transition: 4s; */
+
+  /* top: -100% */
+}
+.capybara_image {
+  position: absolute;
+}
+
+.noneFilter {
+  /* filter: blur(0px); */
+}
+
+.first_capybara_gallery {
+  background-color: #ecffe5;
+}
+.second_capybara_gallery {
+  background-color: #f6fff9;
+}
+.third_capybara_gallery {
+  background-color: #e5f9ff;
+}
+.fourth_capybara_gallery {
+  background-color: #e5fff6;
+}
+.fifth_capybara_gallery {
+  background-color: #edfff2;
+}
+.sixth_capybara_gallery {
+  background-color: #fffaed;
+}
+.seventh_capybara_gallery {
+  background-color: #ecffe6;
+}
+.eighth_capybara_gallery {
+  background-color: #ecffe6;
+}
+
+@media only screen and (max-width: 1510px) {
+}
+
+@media only screen and (max-width: 1034px) {
+  .capybara_none {
+    width: 50%;
+  }
+  .gallery_Block {
+    margin-top: 10vh;
+    width: 70%;
+  }
+  .gallery {
+    height: 170vh;
+  }
+  .filterimage {
+    /* position: relative;
+        width: 100%;
+        height: 100%; */
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .gallery {
+    height: 150vh;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .gallery {
+    /* height: 125vh; */
+    height: auto;
+    /* padding-top: 24px; */
+  }
+  .capybara_none {
+    width: 49%;
+    /* height: 25%; */
+    /* margin-top: 5px; */
+  }
+  .gallery_Block {
+    margin-bottom: 10vh;
+    width: 98%;
+    /* max-height: 100vh; */
+  }
+}

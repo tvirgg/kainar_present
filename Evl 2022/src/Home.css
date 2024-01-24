@@ -1,0 +1,49 @@
+.wrap{
+  max-width: 980px;
+  margin: 0 auto;
+}
+.connect_but{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(50vh - 50px) !important;
+  color: rgba(161, 20, 20, 0.5);
+}
+.wrap_into_block
+{
+  margin-top: 100px;
+}
+.wrap_into{
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.55);
+
+}
+h1{
+  text-align: center;
+  font-size: 30px;
+}
+.MINT_btn{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer !important;
+}
+.w_bal{
+  text-align: center;
+  margin-top: 20px;
+}
+.plane_block{
+  margin: 40px 0;
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+}
+.plane_block_line{
+  height: 40px;
+  background: darkred;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,9 @@
+.albumes_photos_item{
+    display: block;
+    margin: 3px 3px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    background-position: center;
+}
+

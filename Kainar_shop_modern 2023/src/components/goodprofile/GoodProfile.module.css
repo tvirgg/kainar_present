@@ -1,0 +1,173 @@
+/* Общие стили */
+.row {
+    display: flex;
+
+    width: 80%;
+    margin: 0 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+/* Стили для GoodProfile компонента */
+.prof_c {
+    font-family: 'Cyber_3', serif;
+    color: #ad89ea;
+    text-shadow: 1px 1px 1px black, 0 0 0.2em #000000; /* Параметры тени */
+}
+
+.main_lable {
+    margin-left: auto;
+    margin-bottom: 50px !important;
+    margin-right: auto;
+    font-size: 46px;
+}
+
+.galer_block {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.galery {
+    width: 450px;
+    height: 400px;
+    display: flex;
+    user-select: none; /* Отключение выделения */
+}
+
+.info_block {
+    padding-top: 200px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black, 0 0 0.02em #000000;
+}
+
+.info_block_spec {
+    color: #ad89ea;
+    text-shadow: 1px 1px 1px black, 0 0 0.02em #000000;
+}
+
+.info_block__price {
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    max-width: 300px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.in_bask {
+    margin-left: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black, 0 0 0.02em #000000;
+}
+
+.btn_block {
+width: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.svg_back {
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+.row_main{
+    display: flex;
+    justify-content: center;
+}
+.some_swiper_class {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slideContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slideImage {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 588px) {
+    .info_block {
+        margin-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+/* Стили для светлой кнопки */
+.btn_light {
+    background-color: #f8f9fa; /* Цвет фона для светлой кнопки */
+    color: #212529; /* Цвет текста для светлой кнопки */
+    border: 1px solid #f8f9fa; /* Граница для светлой кнопки */
+    padding: 0.375rem 0.75rem; /* Отступы для кнопки */
+    font-size: 1rem; /* Размер шрифта */
+    line-height: 1.5; /* Высота строки */
+    border-radius: 0.25rem; /* Скругление углов */
+    cursor: pointer; /* Стиль курсора */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; /* Анимация перехода */
+}
+
+/* Стили для темной кнопки */
+.btn_dark {
+    background-color: #343a40; /* Цвет фона для темной кнопки */
+    color: #fff; /* Цвет текста для темной кнопки */
+    border: 1px solid #343a40; /* Граница для темной кнопки */
+    padding: 0.375rem 0.75rem; /* Отступы для кнопки */
+    font-size: 1rem; /* Размер шрифта */
+    line-height: 1.5; /* Высота строки */
+    border-radius: 0.25rem; /* Скругление углов */
+    cursor: pointer; /* Стиль курсора */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; /* Анимация перехода */
+}
+
+/* Стили для наведения на кнопки */
+.btn_light:hover, .btn_dark:hover {
+    opacity: 0.8; /* Прозрачность при наведении */
+}
+.gallery_btns{
+    width: 100px;
+}
+.some_swiper_class {
+    position: relative; /* Определяем, что позиционирование дочерних элементов будет относительно этого блока */
+}
+
+.swiper_button_next, .swiper-button-prev {
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    top: 50%; /* Расположение по центру по вертикали */
+    width: 50px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    margin-top: -25px; /* Смещение для центрирования */
+    z-index: 10; /* Убедитесь, что кнопки находятся поверх других элементов */
+    background-color: #fff; /* Цвет фона */
+    border: 1px solid #000; /* Граница */
+    border-radius: 50%; /* Скругление углов */
+    display: flex; /* Для центрирования иконки внутри */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    cursor: pointer; /* Стиль курсора */
+}
+
+.swiper_button_next {
+    right: 10px; /* Правое расположение */
+}
+
+.swiper-button-prev {
+    left: 10px; /* Левое расположение */
+}

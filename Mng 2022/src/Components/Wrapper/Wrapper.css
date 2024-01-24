@@ -1,0 +1,153 @@
+.Wrapper{
+    height: 100vh;
+    position: relative;
+}
+.Wrapper_sect{
+    background: url("../../images/BackgroundFace.png") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.Wrapper_text{
+    font-size: 120px;
+    position: relative;
+    top: 2vw;
+    font-weight: bold;
+    display: flex;
+}
+.mint_now_block{
+    position: relative;
+    top: 100px;
+}
+.mint_now{
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #FE7878;
+    background: white;
+    border-radius: 4px;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.31);
+    -moz-box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.31);
+    box-shadow: 0px 0px 14px 12px rgba(34, 60, 80, 0.31);
+}
+.Wrapper_text_red{
+    color: #FE7878;
+}
+.mongo_ava{
+    width: 58%;
+    position: absolute;
+    left:50%;
+    bottom: 0;
+    transform:translate(-50%, 0%);
+}
+.minus{
+    display: none;
+}
+.flex_badis{
+    display: flex;
+    justify-content: center;
+}
+.header_bottom{
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    z-index: 999;
+}
+.header{
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+}
+.links:hover{
+    cursor: pointer !important;
+}
+.links svg:hover{
+    fill: black;
+}
+@media (max-width: 1020px) {
+    .Wrapper_text{
+        font-size: 85px;
+        position: relative;
+        top: 15vw;
+        font-weight: bold;
+    }
+    .mongo_ava{
+        position: absolute;
+        left:50%;
+        bottom: 0;
+        transform:translate(-50%, 0%);
+    }
+    .mint_now_block{
+        position: relative;
+        top: 250px;
+    }
+}
+@media (max-width: 740px) {
+    .header_bottom{
+        position: absolute;
+        top: 30px;
+        right: 0;
+        z-index: 999;
+        width: 100%;
+    }
+    .header{
+        opacity: 0.5;
+        width: 140px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .minus{
+        display: flex;
+    }
+    .Wrapper_text{
+        font-size: 85px;
+        position: relative;
+        top: 110px;
+        flex-direction: column;
+        font-weight: bold;
+        line-height: 80px;
+    }
+    .mongo_ava{
+        width: 76%;
+        position: absolute;
+        left:50%;
+        bottom: 0;
+        transform:translate(-50%, 0%);
+    }
+    .mint_now_block{
+        position: relative;
+        top: 200px;
+    }
+}
+@media (max-width: 495px) {
+    .Wrapper{
+        height: 95vh;
+    }
+    .Wrapper_text{
+        font-size: 60px;
+        line-height: 55px;
+    }
+    .header_bottom{
+        position: absolute;
+        right: 0;
+        z-index: 999;
+        width: 100%;
+    }
+}
+@media (max-width: 390px) {
+    .Wrapper_text{
+
+    }
+}
+.limk_svg{
+    fill: #ffffff;
+    transition: 0.8s;
+}
+.limk_svg:hover{
+    fill: #cbc3c3;
+}
+@media (max-width: 395px) {
+    .mongo_ava{
+        width: 90%;}
+}

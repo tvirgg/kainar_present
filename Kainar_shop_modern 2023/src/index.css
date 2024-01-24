@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+/* font-family: 'Cuprum', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+/* font-family: 'PT Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*font-family: 'Open Sans', sans-serif;/*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+/* font-family: 'PT Sans Narrow', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+/* font-family: 'PT Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+/* font-family: 'Proza Libre', sans-serif; */
+@font-face {
+  font-family: Cyber; /* Имя шрифта */
+  src: url(./fonts/cyber.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Cyber_2; /* Имя шрифта */
+  src: url(./fonts/cyber_2.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Cyber_3; /* Имя шрифта */
+  src: url(./fonts/cyber_3.otf); /* Путь к файлу со шрифтом */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.awssld {
+  --slider-height-percentage: 70% !important;
+  --slider-transition-duration: 150ms !important;
+  --organic-arrow-thickness: 4px !important;
+  --organic-arrow-border-radius: 2px !important;
+  --organic-arrow-height: 28px !important;
+  --organic-arrow-color: #a94bc6 !important;
+  --control-button-width: 11% !important;
+  --control-button-height: 29% !important;
+  --control-button-background: transparent !important;
+  --control-bullet-color: transparent !important;
+  --control-bullet-active-color: transparent !important;
+  --loader-bar-color: transparent !important;
+  --loader-bar-height: 1px !important;
+}
+.navbar{
+  padding: 0 !important;
+}

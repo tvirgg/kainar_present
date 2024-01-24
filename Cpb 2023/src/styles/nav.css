@@ -1,0 +1,106 @@
+nav {
+  width: 40%;
+  height: 60px;
+  left: 13.3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  color: #ffffff;
+  padding-top: 19px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9999;
+  pointer-events: none;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  /* line-height: 18px; */
+  /* text-transform: uppercase; */
+  /* font-family: 'SequelSans-RomanHead';
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 360;
+    line-height: 18px; */
+  font-weight: 100;
+}
+.navSvgIcon a:first-of-type {
+  margin-right: 15px;
+}
+.navSvgIcon {
+  position: sticky;
+  right: 7%;
+  top: 35px;
+  /* width: 150px; */
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7%;
+  height: 0;
+  z-index: 1000;
+}
+.navSvgIcon svg {
+  cursor: pointer;
+}
+.imageLogo {
+  width: 104px;
+  cursor: pointer;
+  display: block;
+}
+.nav_element {
+  /* font-weight: 360; */
+  font-size: 15px;
+  /* line-height: 18px; */
+  /* text-transform: uppercase; */
+  font-family: "SequelSans-RomanHead";
+  /* font-weight: normal; */
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 100;
+  line-height: 18px;
+}
+
+@media only screen and (max-width: 1510px) {
+  nav {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 1034px) {
+  nav {
+    width: 70%;
+  }
+  .navSvgIcon {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  nav {
+    width: 100%;
+    left: 0%;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* right: 4%; */
+    display: none;
+  }
+  .imageLogo {
+    display: none;
+  }
+  .nav_element {
+    font-style: normal;
+    font-weight: 360;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  nav {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

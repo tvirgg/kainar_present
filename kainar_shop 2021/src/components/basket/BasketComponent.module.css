@@ -1,0 +1,50 @@
+.BasketComponent{
+    background-color: #1c1c1c;
+    font-family: Cyber_3;
+    color: white;
+    min-height: 90vh;
+}
+.BasketComponent_h1{
+    margin-top: 50px;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.item_info, .first_item_info{
+display: flex;
+}
+.item_info{
+    width: 100%;
+    justify-content: space-between;
+}
+.item_info_img img{
+    height: 200px;
+}
+.info{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+h2{
+    font-size: 30px;
+}
+.info_sec{
+    margin-top: 10px;
+    float: right;
+}
+.btn_block{
+    margin-left: 20px;
+}
+.bsk_item__mainb{
+    margin-bottom: 40px;
+}
+.still{
+    margin-top: 200px;
+text-align: center;
+}
+.oreder__btn{
+    margin-top: 120px;
+    text-align: right;
+    margin-bottom: 120px;
+}
+.oreder__btn button{
+padding: 10px;
+}

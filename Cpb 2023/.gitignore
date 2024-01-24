@@ -1,0 +1,4 @@
+/node_modules
+/oldImg
+yarn-debug.log*
+yarn-error.log*

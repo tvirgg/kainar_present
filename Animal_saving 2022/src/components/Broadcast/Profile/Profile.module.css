@@ -1,0 +1,306 @@
+.chat_list_privat{
+    margin-top: 20px;
+}
+.profile_container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 100px);
+    overscroll-behavior: none;
+}
+.profile_container::-webkit-scrollbar {
+    width: 4px;
+}
+.profile_container::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #282828;
+}
+.profile_container::-webkit-scrollbar-thumb {
+    background-color: #282828;
+    border-radius: 2px;
+    height: 20% !important;
+}
+.profile_container:hover::-webkit-scrollbar-thumb {
+    background-color: #9a9595;
+}
+.profile_container_h1{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.basic_info{
+    display: flex;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 100px;
+}
+.basic_info__profile_photo{
+    height: 150px;
+    width: 150px;
+    border-radius: 5000px;
+    border: white 2px solid;
+    position: relative;
+    top:70px;
+    left: 15px;
+}
+.life_block{
+    position: absolute;
+    z-index: 99;
+    background: #e71a39;
+    bottom: -78px;
+    left: 33px;
+    border: 3px solid #262626;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 16px;
+}
+.basic_info__name{
+    position: relative;
+    bottom: -165px;
+    left: 25px;
+}
+.profile_block__name_bsc{
+    font-size: 17px;
+}
+.basic_info__actions{
+    width: 100%;
+    display: flex;
+    position: relative;
+    bottom: -200px;
+    left: -185px;
+}
+.basic_info__action{
+    background: #5b5b5b;
+    transition: all 90ms ease-in-out 0.1s;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 25px;
+    align-items: center;
+    padding: 0 12px;
+    margin: 0 8px;
+    border-radius: 3px;
+    text-overflow: initial;
+}
+.basic_info__action:hover{
+    background: #ffffff;
+}
+.basic_info__action__svg{
+    fill: #ffffff;
+    transition: all 90ms ease-in-out 0.1s;
+}
+.basic_info__action:hover .basic_info__action__svg{
+    fill: #5b5b5b !important;
+}
+.spiller{
+    align-self: center;
+    background: #f8f8f8;
+    height: 25px;
+    opacity: .4;
+    width: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+    position: relative;
+    top: -65px;
+}
+/*/////////////////////////////////*/
+.profile_target{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.profile_target_h2{
+    font-weight: 200;
+    letter-spacing: .075rem;
+    font-size: 1.125rem;
+}
+.profile_target_text{
+    padding: 15px 0;
+    color: #9147ff;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+.profile_target_container{
+    display: flex;
+    flex-direction: column;
+}
+.profile_target_block{
+    width: 100%;
+    height: 40px;
+    border: white 1px solid;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.profile_target_fill{
+    width: 49.1%;
+    height: 40.5px;
+    background: #9147ff;
+    border-radius: 3px 0 0 3px;
+    margin-left: -0.5px;
+    margin-top: -0.1px;
+}
+.profile_target_inside_cout{
+    position: absolute;
+    color: rgba(248,248,248,.6);
+    font-size: 0.95rem;
+}
+.profile_target_inside_cout__cutent {
+    color: #f8f8f8;
+    font-weight: 700;
+    margin-left: 16px;
+    z-index: 2;
+}
+.profile_target_inside{
+    margin-left: auto;
+    align-items: center;
+    color: rgba(248,248,248,.6);
+    font-weight: 700;
+    margin-right: 16px;
+    z-index: 2;
+    font-size: 1.125rem;
+}
+.target_under{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.target_under span{
+    color: #898888;
+    font-size: .813rem;
+    margin-left: 0px;
+}
+.target_under a{
+    border-radius: 3px;
+    background: #66af33;
+    color: #000000 !important;
+    font-weight: 700 !important;
+    transition: all 90ms ease-in-out 0s;
+    cursor: pointer;
+    padding: 12px 15px;
+    margin-left: auto;
+    font-size: 13px;
+    position: relative;
+    left: 2px;
+    transition: 0.2s;
+}
+.target_under a:hover{
+    background: #66af33;
+}
+/*.target_under a:hover{
+    background: #ffffff;
+    color: #000000 !important;
+}*/
+.basic_info_mobile{
+    display: none;
+}
+@media screen and (max-width: 1300px) {
+    .donate_img, .joystic_img, .like_img {
+        height: 35px;
+        width: 35px;
+    }
+    .profile_block__photo_img{
+        width: 40px;
+    }
+    .profile_block__photo__svg{
+        height: 10px;
+    }
+    .profile_block__name{
+        font-size: 14px;
+    }
+    .profile_block__sbcout{
+        font-size: 10px;
+    }
+    .profile_block__bsinfo{
+        margin-top: 5px;
+    }
+    .profile_block__photo{
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .under_broadcast{
+        padding: 20px 20px;
+    }
+    .under_broadcast__right{
+        margin-left: auto;
+        width: auto;
+    }
+}
+@media screen and (max-width: 980px) {
+    .profile_container{
+        margin-top: 0;
+    }
+    .profile_container{
+        height: auto;
+    }
+    .basic_info_mobile{
+        background: url('https://s1.1zoom.ru/b5050/672/Lions_Head_Two_Black_background_527196_3840x2400.jpg') no-repeat center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 150px;
+    }
+    .basic_info__profile_photo{
+        display: block;
+        position: relative;
+        left: auto;
+        top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .life_block{
+        position: relative;
+        left: auto;
+        width: 45px;
+        top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .basic_info__name{
+        position: relative;
+        bottom: -85px;
+        left: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .basic_info__actions{
+        margin-left: auto;
+        margin-right: auto;
+        left: auto;
+        bottom: -100px;
+        width: auto;
+    }
+    .spiller{
+        top: 0;
+    }
+    .basic_info{
+        display: none;
+    }
+}
+@media screen and (max-width: 340px) {
+    .profile_target_inside_cout{
+        font-size: 0.75rem;
+    }
+    .profile_target_inside{
+        font-size: 0.725rem;
+    }
+}
+@media screen and (max-width: 980px) and (pointer: coarse){
+    .profile_container{
+        padding: 0 16px;
+    }
+}
+@media screen and (max-width: 980px) and (pointer: fine){
+    .profile_container{
+        padding-left: 16px;
+        padding-right: 12px;
+    }
+}

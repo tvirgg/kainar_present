@@ -1,0 +1,172 @@
+.team{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    background: url("../../images/Team.png") no-repeat center;
+    background-size: cover;
+}
+.team_h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 56px;
+}
+.team__container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1280px;
+}
+.team__container__item{
+    margin: 30px 0;
+    flex-basis: 30%;
+    height: auto;
+    width: 130px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.team_card_Title{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 32px;
+}
+.profile_photo{
+    width: 100%;
+    height: 300px;
+    top: 5px;
+    display: block;
+    background-size: contain !important;
+}
+.Andrey{
+    background: url('https://i.postimg.cc/JhQJSpmS/photo-2022-03-10-00-12-54.jpg') no-repeat center;
+}
+.Nikita{
+    background: url('https://i.postimg.cc/05D5NTRR/photo-2022-02-28-23-31-35.jpg') no-repeat center;
+}
+.Eugene{
+    background: url('https://i.postimg.cc/4dhfVMYc/photo-2022-02-28-23-09-18.jpg') no-repeat center;
+}
+.team__container__item__bottom{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+}
+.team__container__item__bottom__container{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.header_a__team{
+    width: 50px;
+    width: 50px;
+    border: 1px white solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header_a_svg__team{
+    fill: #ffffff;
+}
+.header_a_svg__team:hover{
+    cursor: pointer;
+    border: 1px #13aff0 solid  !important;
+    transition: 0.4s;
+    background: #13aff0;
+}
+.header_a__team:hover .header_a_svg__team{
+    fill: #000000;
+    transition: 0.4s;
+}
+.secrow{
+}
+
+.Anton{
+    background: url('https://i.postimg.cc/g0jkkrdN/photo-2022-03-06-00-22-01-2.jpg') no-repeat center;
+}
+.RTZ{
+    background: url('https://i.postimg.cc/Hstpwbk6/photo-2022-03-04-23-49-20.jpg') no-repeat center;
+}
+.team__wrap{
+    margin: 0 auto;
+}
+.companies{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 140px 0;
+}
+.ubisoft{
+    width: 20%;
+}
+.dreamworks{
+    width: 20%;
+}
+.Lionsgate{
+    width: 20%;
+}
+
+@media (max-width: 1300px) {
+    .team__container{
+        width: 980px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .team__container{
+        width: 100vw;
+    }
+}
+@media (max-width: 740px) {
+    .team__container__item{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-basis: 100%;
+        height: auto;
+        width: 150px;
+    }
+    .profile_photo{
+        top: 45px;
+    }
+    .team__container__item__bottom{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        bottom: -100px;
+    }
+    .team__container__item__bottom__container {
+        width: 40%;
+    }
+    .team__container{
+        margin-top: -30px;
+    }
+    .companies{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .ubisoft{
+        width: 50%;
+        margin-bottom: 60px;
+    }
+    .dreamworks{
+        width: 50%;
+        margin-bottom: 80px;
+    }
+    .Lionsgate{
+        width: 50%;
+    }
+}
+@media (max-width: 380px) {
+    .team__container{
+        width: 100vw;
+    }
+    .team__container__item__bottom__container {
+        width: 50%;
+    }
+}

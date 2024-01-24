@@ -1,0 +1,21 @@
+.profile_container__info{
+    margin-top: 30px;
+    width: 100%;
+    font-size: .75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_container__item{
+    padding: 10px 0;
+    display: flex;
+}
+.profile_container_lable{
+    color: #a0a0a0;
+    font-weight: 400;
+}
+/* границы ячеек первого ряда таблицы */
+td {
+    padding: 10px;
+    padding-left: 0;
+}

@@ -1,0 +1,14 @@
+.card_item__block{
+    height: 500px;
+    margin-bottom: 50px;
+}
+.card_item{
+height: 100%;
+}
+.btn_block, .in_bsck{
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    font-size: 16px;
+}

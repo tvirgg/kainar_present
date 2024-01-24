@@ -1,0 +1,68 @@
+.form{
+    background: #282828;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+.form_item{
+    margin: 10px 0;
+    width: calc(100% - 16px);
+    padding-left: 15px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #f8f8f8;
+    display: inline-block;
+    height: 38px;
+    line-height: 20px;
+    font-size: .75rem;
+    transition: all 120ms ease-in-out 0s;
+}
+.reg_block_main_left_on_post_label{
+    width: 100%;
+    opacity: .8;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 23px;
+}
+.reg_block_main_left_on_post_btn{
+    font-weight: 700;
+    line-height: 36px;
+    min-width: 130px;
+    font-size: .938rem;
+    background: #ff9900;
+    color: #000000;
+    border-color: transparent;
+    padding: 0 !important;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+.reg_block_main_left_on_post_btn:hover{
+    background: #ffb837;
+}
+.row{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.reg_block_main_left_on_post{
+    width: 40%;
+    opacity: .8;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 23px;
+}
+.input_form{
+    width: 100%;
+}
+.container{
+    width: 100%;
+}
+.select_cont{
+    border-radius:  4px;
+}

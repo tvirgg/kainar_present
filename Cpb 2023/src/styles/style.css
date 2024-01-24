@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  min-height: 100%;
+  background: rgb(255, 255, 255);
+  position: relative;
+  margin: 0 auto;
+  /* height: 745vh !important; */
+  /* height: 100vh !important; */
+  overflow-x: hidden;
+  overscroll-behavior: smooth;
+}
+.c-scrollbar_thumb {
+  opacity: 0;
+}
+html.has-scroll-smooth {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+body::-webkit-scrollbar {
+  width: 0px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background-color: rgb(0, 193, 182, 0.8);
+
+  /* background: rgb(255,255,255, 0.2);        color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255, 1); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  /* border: 3px solid orange;  creates padding around scroll thumb */
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
+html {
+  scroll-behavior: smooth;
+  /* overflow-x:hidden; */
+}
+.Container {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.App {
+  height: 100%; /*1*/
+  width: 100%;
+  /* background: url('../img/background.png') no-repeat; */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.boxALL {
+  position: relative;
+  margin: 0 auto;
+  /* position: sticky; */
+  /* height: 100vh; */
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  margin-top: 98vh;
+}
+.container1 {
+  position: relative;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+}
+.background_Vector {
+  position: absolute;
+  /* background-attachment: fixed; */
+  /* position: fixed; */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0vh;
+  display: block;
+}
+.boxALL_background_Vector {
+  top: -98vh;
+}
+
+.mobileBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0vh;
+  display: none;
+}
+.mobileVector1 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  min-width: 100vw;
+  /* width: 100%;
+    height: 100%; */
+  /* bottom: 0px; */
+  background: url("../img/Vector1MOBILE.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: fill; */
+  z-index: 5;
+}
+
+.mobileVector2 {
+  position: absolute;
+  width: 561px;
+  height: 200vh;
+  /* width: 100%;
+    height: 100%; */
+  /* left: 0vw; */
+  /* top: 35vh;
+    bottom: 0px; */
+  background: url("../img/Vector2MOBILE.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: fill; */
+  z-index: 4;
+}
+.mobileVector3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* width: 100%;
+    height: 100%; */
+  /* left: 30vw; */
+  /* left: 15vw; */
+  top: 0vh;
+  /* bottom: 0px; */
+  background: url("../img/VectorMOBILE_3.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: fill; */
+  z-index: 3;
+}
+.mobileVector3 img {
+  position: relative;
+  top: -215vh;
+}
+
+.Vector1 {
+  position: absolute;
+  width: 1628px;
+  height: 694.99px;
+  min-width: 100vw;
+  min-height: 60vh;
+  /* width: 100%;
+    height: 100%; */
+  /* left: 15vw; */
+  top: 35vh;
+  bottom: 0px;
+  background: url("../img/Vector1.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+
+  /* background: linear-gradient(270.23deg, #FFFFFF 2.13%, rgba(0, 133, 163, 0.78) 53.38%, #FFFFFF 115.92%); */
+  /* filter: blur(150px); */
+  z-index: 15;
+  overflow: hidden;
+}
+.Vector2 {
+  position: absolute;
+  width: 1892px;
+  min-width: 100vw;
+  height: 2240.69px;
+  min-height: 110vh;
+  /* width: 100%; */
+  /* left: 0px; */
+  top: 7vh;
+  background: url("../img/Vector2.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+
+  /* background-color: linear-gradient(323.42deg, #15C6BB 42.95%, #17AEB8 66.83%, rgba(51, 208, 199, 0.98) 88.72%, rgba(46, 98, 199, 0) 113.02%); */
+  /* background: linear-gradient(323.42deg, #30D9CF 42.95%, #17AEB8 66.83%, rgba(62, 227, 217, 0.98) 88.72%, rgba(46, 98, 199, 0) 113.02%); */
+  z-index: 14;
+  overflow: hidden;
+}
+.Vector3 {
+  position: absolute;
+  width: 2051.79px;
+  min-width: 110vw;
+  min-height: 200vh;
+  height: 3762.46px;
+  /* width: 100%;
+    height: 100%; */
+  left: -119.76px;
+  top: -139px;
+  background: url("../img/Vector3.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+  /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
+  /* filter: blur(300px); */
+  z-index: 13;
+  overflow: hidden;
+}
+.Vector4 {
+  position: absolute;
+  width: 2226.9px;
+  min-width: 100vw;
+  height: 886.16px;
+  min-height: 85vh;
+  /* width: 100%; */
+  left: -286.9px;
+  top: 1689.49px;
+  background: url("../img/Vector4.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+
+  /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
+  /* filter: blur(300px); */
+  z-index: 8;
+  /* background-color: black; */
+  transform: rotate(36.34deg);
+}
+.Vector5 {
+  position: absolute;
+  width: 721.66px;
+  min-width: 100vw;
+  height: 990.76px;
+  min-height: 100vh;
+  /* width: 100%; */
+  /* left: -286.9px; */
+  top: 2788.49px;
+  background: url("../img/Vector5.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+
+  /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
+  /* filter: blur(300px); */
+  z-index: 9;
+  /* background-color: black; */
+  /* transform: rotate(36.34deg); */
+}
+.Vector6 {
+  position: absolute;
+  width: 2253.53px;
+  min-width: 100vw;
+  height: 2126.04px;
+  min-height: 200vh;
+  /* width: 100%; */
+  /* left: -731.55px; */
+  top: 3121.9px;
+  background: url("../img/Vector6.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+
+  /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
+  /* filter: blur(300px); */
+  z-index: 10;
+  /* background-color: black; */
+  /* transform: rotate(-36.34deg); */
+}
+.Vector7 {
+  position: absolute;
+  width: 2095.14px;
+  min-width: 100vw;
+  height: 2986.08px;
+  min-height: 280vh;
+  /* width: 100%; */
+  /* left: 0px; */
+  top: 3032.84px;
+  background: url("../img/Vector7.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+
+  /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
+  /* filter: blur(300px); */
+  z-index: 11;
+  /* background-color: black; */
+  /* transform: matrix(-0.79, -0.61, -0.61, 0.79, 0, 0); */
+}
+.Vector9 {
+  position: absolute;
+  width: 3465.54px;
+  min-width: 100vw;
+  height: 3418.48px;
+  min-height: 340vh;
+  /* width: 200%; */
+  left: -50%;
+  top: 2775px;
+  background: url("../img/Vector9.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+
+  /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
+  /* filter: blur(300px); */
+  z-index: 11;
+  /* background-color: black; */
+  /* transform: matrix(-0.79, -0.61, -0.61, 0.79, 0, 0); */
+}
+.Vector10 {
+  position: absolute;
+  width: 4095.14px;
+  min-width: 100vw;
+  height: 3986.08px;
+  min-height: 380vh;
+  /* width: 200%; */
+  left: -60%;
+  top: 4518.84px;
+  background: url("../img/Vector10.png") no-repeat;
+  background-size: 100% 100%;
+  /* background-size: cover; */
+
+  /* background: linear-gradient(11.67deg, #00BBC7 70.63%, rgba(43, 81, 156, 0) 94.17%) ; */
+  /* filter: blur(300px); */
+  z-index: 11;
+  /* background-color: black; */
+  /* transform: matrix(-0.79, -0.61, -0.61, 0.79, 0, 0); */
+}
+.rectangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-size: 100% 100%; */
+  z-index: 19;
+  /* mix-blend-mode: soft-light; */
+
+  /* overflow: hidden; */
+  /* opacity: 0.05; */
+}
+
+/* .Vector {
+    position: absolute;
+    height: 7015.05px;
+    width: 100%;
+    left: -40%;
+    top: -339px;
+    background: url('../img/bacground.svg') no-repeat;
+    background-size: 100% 100%;
+} */
+
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 610px;
+  height: 251px;
+  z-index: -10;
+}
+
+.Capybaras_animation {
+  position: absolute;
+  width: 2123.48px;
+  height: 608.2px;
+  /* transform: rotate(3.85deg); */
+  /* transform: rotate(3.85deg); */
+  /* background-color: red; */
+  top: 362.1px;
+  z-index: -5;
+  background-size: cover;
+}
+
+.firstLine {
+  /* position: relative; */
+  /* top: 369px;
+    left: -365px; */
+
+  /* transform: rotate(25.62deg); */
+  /* background-position: 0px 0px;
+	background-repeat: repeat-x; */
+  /* animation: animatedBackground 3s linear infinite; */
+  /* width: 100%; */
+  /* background: url('../img/firstLine.png') no-repeat;
+    background-size: 100% 100%;
+    z-index: -97; */
+}
+/* .Capybaras {
+    position: absolute;
+    width: 2053.1px; 
+	height: 119.98px; 
+    top: 359px;
+    left: -365px;
+
+	background-image: url(../img/firstLine.png);
+    transform: rotate(25.62deg);
+    background-position: 0px 0px;
+	background-repeat: repeat-x;
+    animation: animatedBackground 6000s linear infinite;
+    border: 1px solid #292929;
+    z-index: 0;
+}
+
+.Capybaras2 {
+    position: absolute;
+    width: 2053.1px; 
+	height: 119.98px; 
+    top: 313px;
+    left: -81px;
+    
+    background-image: url(../img/secondLine.png);
+    transform: matrix(-0.99, 0.16, 0.16, 0.99, 0, 0);
+    background-position: 0px 0px;
+	background-repeat: repeat-x;
+    animation: animatedBackground 6000s linear infinite;
+    border: 1px solid #292929;
+    z-index: -1;
+} */
+
+/* .block-bacground {
+    min-height: 625vh;
+    max-width: 1520px;
+} */
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000% 0;
+  }
+}
+
+img {
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1510px) {
+  .Vector1 {
+    left: 17vw;
+    top: 30vh;
+  }
+  .Vector2 {
+    top: 7vh;
+    left: -20px;
+  }
+  .Vector3 {
+    left: -20%;
+  }
+}
+
+@media only screen and (max-width: 1034px) {
+  .Vector1 {
+    left: 14vw;
+    top: 25vh;
+  }
+  .Vector2 {
+    top: 7vh;
+    left: -40px;
+  }
+  .Vector3 {
+    left: -40%;
+  }
+  .Vector10 {
+    top: 5018.84px;
+    left: -250%;
+  }
+  body {
+    height: 815vh !important;
+    /* height: 100vh !important; */
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .Vector1 {
+    left: 10vw;
+    top: 20vh;
+  }
+  .Vector2 {
+    top: 7vh;
+    left: -60px;
+  }
+  .Vector3 {
+    /* left: -60%;
+        background: url('../img/Vector3.png') no-repeat;
+        background-size: 100% 100%;
+        left: -419.76px;
+        top: -639px; */
+  }
+  .Vector9 {
+    /* top: 2075px; */
+  }
+  .background_Vector {
+    display: none;
+  }
+  .mobileBackground {
+    display: block;
+  }
+  body {
+    height: 1290vh !important;
+    /* height: 100vh !important; */
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .Vector1 {
+    left: 6vw;
+    top: 15vh;
+  }
+  .Vector2 {
+    top: 7vh;
+    left: -80px;
+  }
+  .Vector3 {
+    left: -80%;
+  }
+  body {
+    height: 1215vh !important;
+    /* height: 100vh !important; */
+  }
+}

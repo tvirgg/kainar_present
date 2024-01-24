@@ -1,0 +1,18 @@
+.footer_block {
+    background-color: #18161c;
+    height: 100px;
+    font-family: Cyber_3;
+    padding-top: 30px;
+    color: white;
+}
+.footer_block h3{
+    font-family: Cyber_3;
+    font-size: 20px;
+}
+.footer_block h4{
+    font-family: Cyber_3;
+    font-size: 16px;
+}
+.footer_block__title{
+    text-align: center;
+}

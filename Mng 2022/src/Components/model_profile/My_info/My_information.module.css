@@ -1,0 +1,88 @@
+.container{
+    padding: 20px;
+    background: #282828;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+.container_h1{
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    letter-spacing: .075rem;
+}
+.container_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile_container__info{
+    width: 100%;
+    font-size: .75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_container__item{
+    padding: 10px 0;
+    display: flex;
+}
+.profile_container_lable{
+    color: #a0a0a0;
+    font-weight: 400;
+}
+/* границы ячеек первого ряда таблицы */
+td {
+    padding: 10px;
+    padding-left: 0;
+}
+.lentd{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.info_table{
+    margin-top: 20px;
+}
+.profile_container_lable_soc_network a{
+    margin-right: 5px;
+    line-height: 20px;
+}
+.profile_container_lable_soc_network_lable{
+    line-height: 20px;
+}
+.profile_container_lable_soc_network a:hover{
+    text-decoration: underline !important;
+}
+.edit{
+    display: block;
+    padding: 5px;
+}
+.edit_Svg{
+    transition: 0.4s;
+    fill: #ffffff;
+}
+.edit:hover .edit_Svg{
+    fill: #ff9900;
+}
+.save{
+    padding: 5px 10px;
+    background: #ff9900;
+    border-radius: 4px;
+    transition: 0.2s;
+    font-size: .813rem;
+}
+.save:hover{
+    background: #ffffff;
+    color: black !important;
+}
+.span_elem{
+    margin-right: 3px;
+}
+@media screen and (max-width: 445px) {
+    .span_elem{
+        margin-bottom: 2px;
+    }
+}

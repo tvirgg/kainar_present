@@ -1,0 +1,214 @@
+Exporter version: 3.3.1, Blender version: 3.6.1
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  D:\Blender\zmei\mobile_scene\
+			processing texture oberer_kuhberg_256
+	Python World class constructor completed
+	processing begun of camera (UniversalCamera):  Camera
+	processing begun of mesh:  Cube
+		processing begun of material:  theathre
+			processing texture theathre1
+		num positions      :  288
+		num normals        :  288
+		num tangents       :  0
+		num uvs            :  576
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  144
+	processing begun of node:  Empty_5Deg
+	processing begun of mesh:  Cylinder.001
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  1758
+		num normals        :  1758
+		num tangents       :  0
+		num uvs            :  3516
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1536
+	processing begun of mesh:  Cube.001
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  174
+		num normals        :  174
+		num tangents       :  0
+		num uvs            :  348
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  72
+	processing begun of mesh:  Cube.002
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  864
+		num normals        :  864
+		num tangents       :  0
+		num uvs            :  1728
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  288
+	processing begun of mesh:  Cube.003
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  288
+		num normals        :  288
+		num tangents       :  0
+		num uvs            :  576
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  144
+	processing begun of mesh:  Cube.004
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  288
+		num normals        :  288
+		num tangents       :  0
+		num uvs            :  576
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  144
+	processing begun of mesh:  Cylinder.002
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  459
+		num normals        :  459
+		num tangents       :  0
+		num uvs            :  918
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  384
+	processing begun of node:  Empty_10Deg
+	processing begun of node:  Empty_60Deg
+	processing begun of mesh:  Cube.006
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  174
+		num normals        :  174
+		num tangents       :  0
+		num uvs            :  348
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  72
+	processing begun of mesh:  Cube.005
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  138
+		num normals        :  138
+		num tangents       :  0
+		num uvs            :  276
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  60
+	processing begun of mesh:  Cube.007
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  870
+		num normals        :  870
+		num tangents       :  0
+		num uvs            :  1740
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  360
+	processing begun of mesh:  Cube.008
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  696
+		num normals        :  696
+		num tangents       :  0
+		num uvs            :  1392
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  288
+	processing begun of mesh:  Plane
+		processing begun of material:  ground
+			processing texture photo
+			processing texture photo
+		num positions      :  289
+		num normals        :  289
+		num tangents       :  0
+		num uvs            :  578
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  512
+	processing begun of mesh:  Cube.009
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  359
+		num normals        :  359
+		num tangents       :  0
+		num uvs            :  718
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  144
+	processing begun of mesh:  Cube.010
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  402
+		num normals        :  402
+		num tangents       :  0
+		num uvs            :  804
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  192
+	processing begun of mesh:  Cylinder.004
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  2340
+		num normals        :  2340
+		num tangents       :  0
+		num uvs            :  4680
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1152
+	processing begun of mesh:  Cylinder.003
+		processing begun of material:  theathre
+		registered as also a user of material:  theathre
+		num positions      :  612
+		num normals        :  612
+		num tangents       :  0
+		num uvs            :  1224
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  384
+	processing begun of mesh:  Tree.001
+		processing begun of material:  bark.001
+		processing begun of material:  Branches0025_1_S
+			processing texture BarkPine_02
+			processing texture tree1
+		processing begun of multimaterial:  zmei_block_mobile.Multimaterial#0
+		num positions      :  5666
+		num normals        :  5666
+		num tangents       :  0
+		num uvs            :  11332
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  4940
+	processing begun of light (POINT):  Light
+========= Writing of JSON file started =========
+	writing mesh:  Cube
+	writing mesh:  Cylinder.001
+	writing mesh:  Cube.001
+	writing mesh:  Cube.002
+	writing mesh:  Cube.003
+	writing mesh:  Cube.004
+	writing mesh:  Cylinder.002
+	writing mesh:  Cube.006
+	writing mesh:  Cube.005
+	writing mesh:  Cube.007
+	writing mesh:  Cube.008
+	writing mesh:  Plane
+	writing mesh:  Cube.009
+	writing mesh:  Cube.010
+	writing mesh:  Cylinder.004
+	writing mesh:  Cylinder.003
+	writing mesh:  Tree.001
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 0.63 secs

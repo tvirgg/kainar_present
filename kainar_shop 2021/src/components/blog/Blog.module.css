@@ -1,0 +1,26 @@
+.post_block{
+    color: #ddd5d5;
+}
+.Blog{
+    background-color: #544f63;
+    font-family: Cyber_3;
+}
+.post_block{
+    margin-top: 100px;
+    border-bottom: 2px solid;
+}
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 70px;
+}
+.post_block__text{
+    margin: 50px 0;
+    font-size: 25px;
+}
+.post_block__info{
+    margin: 50px 0;
+    font-size: 25px;
+    text-align: right;
+}
