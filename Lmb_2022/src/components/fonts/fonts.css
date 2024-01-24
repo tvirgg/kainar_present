@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: local('PressStart2P-Regular'), url("./PressStart2P-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GraphikLCG-Regular';
+    src: local('GraphikLCG-Regular'), url("./GraphikLCG-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}

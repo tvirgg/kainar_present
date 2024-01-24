@@ -1,0 +1,191 @@
+.Wrapper{
+    /*/min-height: 80vh;/*/
+}
+.header{
+    width: 100%;
+    height: 40px;
+    background: radial-gradient(57.14% 29990.1% at 103.37% 100%, #9EECF6 0%, #7DE0ED 39.06%, #000000 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header_right{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 12px;
+    align-items: center;
+}
+.header_label{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 12px;
+}
+.Wrapper_contain{
+    height: 588px;
+    width: 100%;
+    background: url("../../images/wrapp_back.png") no-repeat top;
+    background-size: cover;
+    position: relative;
+}
+.mint_btn{
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 98.5px;
+    top: 293.4px;
+    background: #9BE3EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Label{
+   position: absolute;
+    top: 116px;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: normal;
+}
+.main_roobt{
+    position: absolute;
+    right: 0;
+    width: 425px;
+    height: 478px;
+    top: 109px;
+}
+.header_right__a{
+    display: flex;
+    align-items: center;
+    height: 25px;
+}
+.tw{
+    margin-left: 20px;
+    margin-top: -3px;
+}
+.Wrapper_vector{
+    position: absolute;
+    bottom: 125px;
+    left: 0;
+    width: 535px;
+    height: 42px;
+}
+.header_icon{
+    height: 25px;
+    width: 25px;
+}
+.robotic_mob{
+    display: none;
+}
+@media (max-width: 1020px) {
+    .Wrapper_contain{
+        width: 100%;
+        background: url("../../images/wrapp_back720.png") no-repeat top;
+        background-size: contain;
+        height: 480px;
+    }
+    .Label{
+        position: absolute;
+        top: 98px;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: normal;
+    }
+    .mint_btn{
+        position: absolute;
+        left: 0;
+        width: 22.222%;
+        height: 79.5px;
+        top: 320px;
+    }
+    .main_roobt{
+        position: absolute;
+        right: 0;
+        width: 350px;
+        height: 397px;
+        top: 83px;
+    }
+    .Wrapper_vector{
+        bottom: 25px;
+        left: 0;
+        width: 371px;
+        height: 27px;
+    }
+}
+@media (max-width: 740px) {
+    .Wrapper_contain{
+        background: url("../../images/wrapp_back480.png") no-repeat top;
+        background-size: contain;
+        height: 640px;
+        text-align: center;
+    }
+    .Label{
+        position: relative;
+        top: 107px;
+        font-size: 68px;
+        text-align: center;
+    }
+    .mint_btn{
+        width: 160px;
+        height: 80px;
+        left: 160px;
+        top: 520px;
+        z-index: 3;
+        background: #4ba5ae;
+    }
+    .main_roobt{
+        display: none;
+    }
+    .robotic_mob{
+        display: block;
+        position: relative;
+        right: 0;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: -45px;
+    }
+    .Wrapper_vector{
+        display: none;
+    }
+}
+@media (max-width: 495px) {
+    .Wrapper_contain {
+        /*/
+        height: calc(100vh - 40px);
+         */
+    }
+    .Label{
+        position: relative;
+        top: 90px;
+        font-size: 48px;
+        text-align: center;
+    }
+    .mint_btn{
+        position: relative;
+        width: 33.33%;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        left: auto;
+        top: 440px;
+    }
+}
+@media (max-width: 360px) {
+    .Label{
+        top: 80px;
+        font-size: 40px;
+    }
+    .mint_btn{
+        position: relative;
+        width: 33.33%;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        left: auto;
+        top: auto;
+        bottom: -350px;
+        font-size: 16px;
+    }
+}

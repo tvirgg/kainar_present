@@ -1,0 +1,198 @@
+.Rules{
+    display: flex;
+    flex-direction: row;
+    z-index: 9;
+    padding-bottom: 60px;
+    background: black;
+}
+.Rules_first{
+    height: 800px;
+    width: 50%;
+    background: url("../../images/rules_main.png") no-repeat white center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.arrows_block_ar__svg{
+    position: relative;
+    top: 3px;
+}
+.arrows_block_ar__svg_end{
+    transform:rotate(180deg);
+    position: relative;
+    top: -2px;
+}
+.Rules_first_h1{
+    color: black;
+    top: 30%;
+    left: 20px;
+    position: relative;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: justify;
+}
+.spacing{
+    letter-spacing: 1.2em;
+}
+.Rules_second{
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+}
+.Rules_second__box{
+    width: 100%;
+    position: absolute;
+    height: 2400px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+}
+.Rules_second_item{
+    width: 100%;
+    height: 800px;
+    background: black;
+    position: relative;
+}
+.first_light{
+    position: absolute;
+    left: 0;
+}
+.Rules_second_item_num{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.sec_light{
+    position: absolute;
+    right: -350px;
+    top: 14%;
+    opacity: 0.8;
+}
+.third_light{
+    position: absolute;
+    left: -300px;
+    bottom: -40%;
+    opacity: 0.8;
+}
+.Rules_second_item_p{
+    position: relative;
+    top: 400px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.arrows_block{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    justify-content: center;
+}
+.arrows_block_ar{
+    cursor: pointer;
+    border: #93DDE7 1px solid;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 40px auto auto;
+    transition: 0.4s;
+}
+.arrows_block_ar_end{
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+.Rules_second_item_num{
+    width: 160px;
+}
+@media (max-width: 1020px) {
+    .arrows_block_ar{
+        margin-bottom: auto;
+        margin-left: 40px;
+    }
+    .arrows_block_ar_end{
+        margin-top: auto;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 740px) {
+    .Rules{
+        display: flex;
+        flex-direction: column;
+        z-index: 9;
+        padding-bottom: 0;
+    }
+    .Rules_first{
+        height: 320px;
+        width: 100%;
+        background: url("../../images/rules_main.png") no-repeat white center 60%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .Rules_second{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        height: 520px;
+    }
+    .Rules_second_item_num{
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        width: 100px;
+    }
+    .light{
+        width: 200px;
+    }
+    .Rules_second_item_p{
+        position: relative;
+        top: 220px;
+        width: 80%;
+    }
+    .sec_light{
+        position: absolute;
+        right: -110px;
+        top: 30%;
+        opacity: 0.8;
+    }
+    .third_light{
+        position: absolute;
+        left: -50px;
+        bottom: 24%;
+        opacity: 0.8;
+    }
+}
+@media (max-width: 495px) {
+    .Rules_first{
+        height: 420px;
+    }
+    .arrows_block_ar{
+        margin-bottom: auto;
+        margin-left: 20px;
+    }
+    .arrows_block_ar_end{
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+    .Rules_second_item_p{
+        width: 87%;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .Rules_first_h1{
+        font-size: 26px;
+    }
+}
+@media (max-width: 365px) {
+}

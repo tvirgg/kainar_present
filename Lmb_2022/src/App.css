@@ -1,0 +1,625 @@
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+}
+.block{
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sect{
+  width: 100%;
+}
+
+.YouShallNotPass {
+  /* padding: 5px 40px; */
+  position: relative;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  background: url(./images/backgroundWrapper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  font-family: 'GraphikLCG-Regular';
+  font-weight: normal;
+  overflow: hidden;
+}
+.YouShallNotPass .YouShallNotPass_block {
+  position: relative;
+  /* height: 75%; */
+  height: auto;
+  width: 70%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* backdrop-filter: blur(20px); */
+  background-color: #0000008c;
+  border-radius: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.YouShallNotPass .YouShallNotPass_block .YouShallNotPass_text {
+  position: relative;
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  /* font-family: 'GraphikLCG-Regular'; */
+  /* font-style: normal; */
+  /* font-weight: 300; */
+  font-size: 28px;
+  height: 55vh; /*45*/
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.YouShallNotPass_block .WeAreComingSoon {
+  position: relative;
+  font-size: 86px;
+  margin: 42px 0px 22px 0px;
+  background-color: #000000da;
+  background: linear-gradient(to right, rgb(255, 12, 12), rgb(255, 171, 14), rgb(255, 255, 15), rgb(0, 185, 0), rgb(41, 255, 255), rgb(38, 38, 250), rgb(255, 41, 255), rgb(255, 12, 12));
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #00000000;
+  -webkit-animation: rainbow 480s linear infinite;
+  animation: rainbow 480s linear infinite;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: rgb(255, 192, 0); */
+}
+.WeAreComingSoon img {
+  position: relative;
+  height: 100%;
+}
+@-webkit-keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 10000% 50% }
+  100% { background-position: 0% 50% }
+}
+ 
+@keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 10000% 50% }
+  100% { background-position: 0% 50% }
+}
+.YouShallNotPass_block .WeAreComingSoon_text {
+  position: relative;
+  font-size: 34px;
+  margin: 0px 0px 32px 0px;
+  width: 80%;
+  left: 0; right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 250%;
+}
+.YouShallNotPass .logoIconShall {
+  position: relative;
+  margin: 0px auto;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  /* width: 50%; */
+  /* width: 80%; */
+  max-height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* font-family: 'GraphikLCG-Regular'; */
+  font-family: 'PressStart2P-Regular';
+  font-weight: normal;
+  font-size: 56px;
+  color: #FFFFFF;
+}
+.YouShallNotPass .logoIconShall img {
+  position: relative;
+  height: 180%;
+  
+  /* margin: 0px auto; */
+  /* margin-top: 2.5%;
+  margin-bottom: 2.5%; */
+  /* width: 50%; */
+  /* width: 80%; */
+  /* max-height: 10%; */
+}
+.YouShallNotPass .logoIconShall span {
+  position: relative;
+  bottom: -14px;
+  left: -40px;
+  font-size: 88px
+}
+.YouShallNotPass_block_socials {
+  position: absolute;
+  bottom: 0;
+  /* height: 25%; */
+  height: auto;
+  /* bottom: 10px; */
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  /* font-family: 'GraphikLCG-Regular'; */
+  /* font-style: normal; */
+  /* font-weight: 300; */
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  /* padding-bottom: 20px; */
+  margin-bottom: 42px;
+
+}
+
+.socialLinks {
+  position: relative;
+  /* bottom: 42px; */
+  /* z-index: 9999; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  /* right: 323px; */
+  /* top: 36px; */
+  margin-top: 10px;
+  border-radius: 12px;
+  padding: 0px 15px;
+  height: 48px;
+  /* background-color: #082d3a6b; */
+  /* backdrop-filter: blur(10px); */
+}
+.header_a{
+/* margin-left: auto; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.header_a svg {
+  width: 80px;
+  height: 80px;
+}
+.header_a img {
+  width: 140px;
+  height: 140px;
+}
+.YouShallNotPass_block_socials_text {
+  margin-bottom: 10px;
+  width: 100%;
+  line-height: 120%;
+  /* white-space: nowrap; */
+}
+.YouShallNotPass input{
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'GraphikLCG-Regular';
+  font-style: normal;
+  /* font-weight: 300; */
+  font-size: 22px;
+  /* margin-top: 1%; */
+  height: 5%;
+  /* transform: translateY(-100%); */
+  line-height: 2em;
+  text-align: center;
+  display: none;
+}
+.cover_top{
+  z-index: 4;
+}
+@media (max-width: 1020px) {
+  .block{
+    width: 720px;
+  }
+}
+@media (max-width: 740px) {
+  .block{
+    width: 480px;
+  }
+}
+@media (max-width: 495px) {
+  .block{
+    width: 100%;
+  }
+}
+/*//FOOOOOTER/*/
+.Footer{
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+  position: relative;
+  /* border-top: 1px white solid; */
+  width: 100%;
+  height: auto;
+  background: #362c36;
+  display: flex;
+  z-index: 9999;
+}
+.footer_block{
+  width: 1710px;
+  padding: 0 60px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.footer_block__left{
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.footer_block__right{
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer_block__left__p{
+  margin-top: 10px;
+  width: 500px;
+  line-height: 22px;
+}
+
+.footer_block__left__p__bottom{
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 1);
+  /* font-size: 12px; */
+  line-height: 20px;
+  font-weight: bold;
+  color: #57b6bd;
+}
+.footer_block__right_nav{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+
+}
+.footer_block__right_nav_a{
+  margin-top: 35px;
+  margin-bottom: 5px;
+  /* font-size: 14px; */
+  line-height: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: right;
+}
+.footer_block__right_nav a{
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  text-align: right;
+  text-decoration: none;
+}
+.footer__social{
+  /* margin-top: 15px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  /* margin-left: 20px; */
+}
+.logo_gear {
+  text-transform: uppercase;
+}
+.gradientMixBlind2 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+}
+.imageBackground2 {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(5px);
+  overflow: hidden;
+}
+/*-----------------------------*/
+@media (max-width: 540px) {
+  .footer_block__right_nav_a{
+    text-align: center;
+  }
+  .footer__social{
+    /* width: 80%; */
+    /* margin-left: 10%; */
+  }
+  .footer_block{
+    flex-direction: column;
+  }
+  .footer_block__left{
+    margin: 20px auto;
+    order: 1;
+  }
+  .footer_block__right {
+    margin: 30px auto 10px auto;
+    order: 0;
+    text-align: center;
+  }
+  .footer_block__right_nav a, .footer_block__right_nav, .footer_block__left, .footer_block__left__p{
+    text-align: center;
+  }
+  .footer_logo{
+    /* display: none !important; */
+  }
+}
+a:hover{
+  cursor: pointer;
+}
+.logo_text{
+  font-weight: bold;
+  font-size: 36px;
+  color: #57b6bd;
+}
+.header_a{
+  margin-left: auto;
+}
+@media (max-width: 540px) {
+  .header_a {
+    margin-left: 0;
+  }}
+a:hover{
+  cursor: pointer !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap');
+
+
+@media screen and (max-width: 3830px) {
+  .YouShallNotPass .logoIconShall span {
+    left: -36px;
+    font-size: 83px
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    line-height: 230%;
+    font-size: 32px;
+  }
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 81px;
+  }
+}
+@media screen and (max-width: 3330px) {
+  .YouShallNotPass .logoIconShall span {
+    left: -32px;
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    line-height: 210%;
+    font-size: 30px;
+  }
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 76px;
+  }
+  .header_a svg {
+    width: 70px;
+    height: 70px;
+  }
+  .header_a img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 2930px) {
+  .YouShallNotPass .logoIconShall span {
+    left: -28px;
+    font-size: 78px
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    line-height: 190%;
+    font-size: 28px;
+  }
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 71px;
+  }
+  .header_a svg {
+    width: 60px;
+    height: 60px;
+  }
+  .header_a img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 2630px) {
+  .YouShallNotPass .logoIconShall span {
+    left: -24px;
+    font-size: 73px
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    line-height: 180%;
+    font-size: 26px;
+  }
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 68px;
+  }
+}
+@media screen and (max-width: 2230px) {
+  .YouShallNotPass .logoIconShall span {
+    left: -20px;
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    line-height: 170%;
+    font-size: 24px;
+  }
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 63px;
+  }
+  .header_a svg {
+    width: 50px;
+    height: 50px;
+  }
+  .header_a img {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 1930px) {
+  .YouShallNotPass .logoIconShall span {
+    left: -18px;
+    font-size: 68px
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    line-height: 150%;
+    font-size: 22px;
+  }
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 58px;
+  }
+  .header_a svg {
+    width: 40px;
+    height: 40px;
+  }
+  .header_a img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 1310px) {
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 44px;
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    line-height: 130%;
+  }
+  /* .header_a svg {
+    width: 30px;
+    height: 30px;
+  }
+  .header_a img {
+    width: 70px;
+    height: 70px;
+  } */
+  .YouShallNotPass .YouShallNotPass_block {
+    width: 80%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    font-size: 20px;
+  }
+  .YouShallNotPass .logoIconShall span {
+    font-size: 42px;
+    bottom: -12px;
+  }
+  .YouShallNotPass .logoIconShall img {
+    height: 160%;
+  }
+  .YouShallNotPass_block_socials_text {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1034px) {
+
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 40px;
+    margin: 32px 0px 22px 0px;
+  }
+  .YouShallNotPass .YouShallNotPass_block {
+    width: 85%;
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+  }
+  .YouShallNotPass .logoIconShall span {
+    font-size: 36px;
+    bottom: -10px;
+  }
+  .YouShallNotPass .logoIconShall img {
+    height: 140%;
+  }
+}
+@media screen and (max-width: 910px) {
+
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 36px;
+  }
+  .YouShallNotPass .YouShallNotPass_block {
+    width: 90%;
+    /* height: 80vh; */
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .header_a svg {
+    width: 30px;
+    height: 30px;
+  }
+  .header_a img {
+
+  }
+  .WeAreComingSoon img {
+    height: 60%;
+  }
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 32px;
+  }
+  .YouShallNotPass .logoIconShall {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* height: 15%; */
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .YouShallNotPass .logoIconShall span {
+    font-size: 32px;
+    bottom: -8px;
+  }
+  .YouShallNotPass .logoIconShall img {
+    height: 120%;
+  }
+}
+@media screen and (max-width: 590px) {
+
+  .YouShallNotPass_block .WeAreComingSoon {
+    font-size: 24px;
+  }
+  .YouShallNotPass_block .WeAreComingSoon_text {
+    font-size: 11px;
+    font-weight: normal;
+    margin-bottom: 12px;
+  }
+  .YouShallNotPass .logoIconShall span {
+    font-size: 26px;
+    bottom: -6px;
+  }
+  .YouShallNotPass .logoIconShall img {
+    height: 120%;
+  }
+  .WeAreComingSoon img {
+    height: 55%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .WeAreComingSoon img {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .WeAreComingSoon img {
+    height: 45%;
+  }
+}

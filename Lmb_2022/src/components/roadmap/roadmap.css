@@ -1,0 +1,157 @@
+.Roadmap {
+    position: relative;
+    /* height: 220vh; */
+    width: 100%;
+    /* height: 220vh; */
+    z-index: 100;
+    /* background-color: #f7f6f0; */
+    font-family: 'Raleway', sans-serif;
+    color: #f7f6f0;
+    z-index: 102;
+}
+.Roadmap{
+    position: relative;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;    /* padding-bottom: 50px; */
+}
+.RoadmapBackground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+}
+.RoadmapImageBackground {
+    position: absolute;
+    background: url('../../images/galarysecback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(3px); */
+    z-index: 59;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* filter: blur(3px); */
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.Roadmap_top{
+    text-align: center;
+}
+.Roadmap_top_h1{
+    font-size: 56px;
+    line-height: 68px;
+    margin-bottom: 37px;
+    margin-top: 80px;
+}
+.Roadmap_top_p{
+    position: relative;
+    top: 0;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.yellow{
+    color: rgb(132, 192, 206);
+}
+.yellow1{
+    color: rgb(64, 89, 95);
+}
+.map_item_h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 56px;
+    color: #FFFFFF;
+    /* mix-blend-mode: difference; */
+}
+.map_item{
+    /* background: rgb(132, 192, 206, 0.2); */
+    /* border: 3px solid #FFFFFF; */
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    font-weight: bold;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 40px 0;
+    position: relative;
+    /* backdrop-filter: blur(15px); */
+    /* border: 3px solid rgb(132, 192, 206, 0.2); */
+}
+.map_item_background {
+    /* border: 3px solid #FFFFFF; */
+
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6f80995d;
+    mix-blend-mode: overlay;
+    border-radius: 20px;
+}
+.map_item:last-of-type{
+    /* margin: 40px 0; */
+    margin-bottom: 80px;
+}
+.map_item_p{
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+.teme{
+    margin-bottom: 20px;
+}
+@media (max-width: 1020px) {
+
+}
+@media (max-width: 740px) {
+    .map_item{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .map_item_p{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+@media (max-width: 495px) {
+    .map_item{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .map_item_h1{
+        font-size: 52px;
+    }
+    .map_item_p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .Roadmap_top_h1{
+        font-size: 30px;
+        line-height: 48px;
+    }
+    .Roadmap_top_p{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 390px) {
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap');

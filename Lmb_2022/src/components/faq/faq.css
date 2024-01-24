@@ -1,0 +1,146 @@
+.faq{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #362c36;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF !important;
+    padding-top: 0px;
+    /* padding-bottom: 30px; */
+    font-family: 'Raleway', sans-serif;
+    z-index: 102;
+}
+.faq_h1{
+    padding-top: 52px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 56px;
+}
+.faq__container_left{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.faq_third{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faq__container_right{
+    display: flex;
+    align-items: center;
+}
+.faq_item{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.faq_item__top{
+    position: relative;
+    display: flex;
+}
+.faq_item__top_img{
+    width: 270px;
+    height: 270px;
+}
+.faq_play{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+.faq_name{
+    position: relative;
+    top: 17px;
+    font-size: 24px;
+}
+.faq_item_sec{
+    margin-top: 70px;
+}
+.faq_gear{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+summary::marker{
+    height: 30px;
+}
+.row-content{
+    margin: 10px 0;
+}
+.styles_icon-wrapper__2cftw {
+    transform: none !important;
+}
+.row-content-text{
+    text-align: left;
+    background: #362c36;
+    padding: 20px 40px !important;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px !important;
+}
+.icon-wrapper {
+    top: auto !important;
+    right: 20px !important;
+    font-size: 42px !important;
+}
+.faq-row {
+    border-bottom: 0px solid #362c36 !important;
+    /* padding-bottom: 15px !important; */
+    /* border: 0 !important; */
+    border-radius: 18px !important;
+    background-color: #68516D !important;
+    margin-bottom: 20px !important;
+}
+.row-title-text{
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+.faq-body{
+    border-radius: 20px;
+}
+.icon-wrapper{
+    font-size: 28px;
+}
+.row-content-tex{
+    font-size: 28px;
+}
+.faq-row-wrapper{
+    border-radius: 20px !important;
+    --faq-bg-color: #362c36 !important;
+
+}
+@media (max-width: 1020px) {
+    .row-content-text {
+        width: 80%;
+    }
+}
+@media (max-width: 495px) {
+    .row-content-text {
+        width: 70%;
+    }
+    .row-content-text{
+        /* padding: 5px !important; */
+        font-size: 20px !important;
+    }
+    .row-title-text{
+        padding-right: 0 !important;
+    }
+}
+
+.team__wrap {
+    margin-bottom: 40px !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap');

@@ -1,0 +1,33 @@
+.Wecan{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    position: relative;
+}
+.Wecan_container{
+    width: 100%;
+}
+.desc{
+    width: 100%;
+}
+.mob{
+    display: none;
+    width: 100%;
+}
+.uniq{
+    margin-top: -10px;
+}
+@media (max-width: 740px) {
+    .desc{
+        display: none;
+    }
+    .mob{
+        display: block;
+    }
+    .uniq{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+}
