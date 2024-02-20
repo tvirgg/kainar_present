@@ -9,9 +9,9 @@ const NavBar = () => {
   const MobileMenu = useRef(null);
   const { cartState } = useContext(CartContext);
   const count = cartState.count; // Получение текущего значения счётчика из контекста корзины
-useEffect(()=>{
-  console.log(cartState);
-  },[cartState]);
+  // useEffect(()=>{
+  // console.log(cartState);
+  // },[cartState]);
 
   // useEffect(() => {
   //   function handleResize() {
@@ -55,7 +55,7 @@ useEffect(()=>{
                   </div>
                   <div className="navbar__links-item">
                     <Image className="navbar__icon" src="/icons/phone.svg" alt="logo" width={15} height={10} />
-                    <span className="navbar__text navbar__text--phone">+7 (950) 316 03 69</span>
+                    <span className="navbar__text navbar__text--phone">+7 950 318 40 59</span>
                   </div>
                 </div>
                 <Link href={`/basket`}>

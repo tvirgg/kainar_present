@@ -37,7 +37,7 @@ const Footer = () => (
             </a>
             <a className="footer__contacts-item" href="tel:+79503184059">
               <Image className="footer__icon" src="/icons/phone.svg" alt="logo" width={15} height={10} />
-              <span className="footer__text footer__text--phone">+7 (950) 316 03 69</span>
+              <span className="footer__text footer__text--phone">+7 950 318 40 59</span>
             </a>
           </div>
         </div>

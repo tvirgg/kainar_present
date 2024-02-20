@@ -6,7 +6,7 @@ import RequestForm from "../popupFormEmail/requestForm";
 import {CartContext} from "@/src/context/CartProvider.client";
 
 const Services = () => {
-  const { cartState} = useContext(CartContext);
+  const {cartState} = useContext(CartContext);
   const reqForm = useRef<HTMLDivElement>(null);
   // const count = useSelector((state: AppState) => state.counter.value);
   // const dispatch = useDispatch();
@@ -31,10 +31,6 @@ const Services = () => {
       console.error("Ошибка при запросе: ", error);
     }
   }
-
-  useEffect(() => {
-    // sendEmail("1", "2");
-  }, []);
 
   function openForm() {
     if (reqForm.current) {
@@ -67,7 +63,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="service-block">
+      <div className="service-block service_block__sec">
         <div className="service-block--text">
           <h2>ОПТИМИЗАЦИЯ ПРОМЫШЛЕННЫХ ПРОЦЕССОВ</h2>
           <p>
@@ -78,7 +74,7 @@ const Services = () => {
             Оставить заявку
           </span>
         </div>
-        <img src="/images/image_services_2.png" alt="Оптимизация промышленных процессов" />
+        <img src="/images/image_services_2.png" alt="Оптимизация промышленных процессов" className="service_block__sec__img"/>
       </div>
 
       <div className="service-block">

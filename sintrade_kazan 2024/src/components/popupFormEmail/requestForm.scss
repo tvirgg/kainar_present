@@ -24,6 +24,14 @@ background: rgba(255, 255, 255, 0.60);
   height: 539px;
   flex-shrink: 0;
   padding: 0 33px;
+  @media (max-width: 861px) {
+    width: 90%;
+    height: 639px;
+  }
+  @media (max-width: 361px) {
+    width: 90%;
+    padding: 0 15px;
+  }
 }
 
 .request-form--hidden {
@@ -55,11 +63,17 @@ background: rgba(255, 255, 255, 0.60);
   font-style: normal;
   font-weight: map-get($font-weights, "Regular");
   line-height: 30px; /* 83.333% */
+  @media (max-width: 510px) {
+    font-size: 24px;
+  }
 }
 
 .customer-info{
   display: flex;
   justify-content: space-around;
+  @media (max-width: 861px) {
+    flex-direction: column;
+  }
 }
 .request-form__input,
 .request-form__textarea {
@@ -95,6 +109,9 @@ background: rgba(255, 255, 255, 0.60);
     width: 354px;
     height: 48px;
     margin: 4px;
+    @media (max-width: 861px) {
+      width: 100%;
+    }
   }
 }
 .customer-info_item:first-child{

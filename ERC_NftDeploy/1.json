@@ -1,0 +1,27 @@
+{
+  "name": "Cosmic Odyssey",
+  "description": "A unique digital collectible from the Cosmic Odyssey series, featuring a journey through space.",
+  "image": "ipfs://QmcpbNptsB7HTjjjqokDMxaCHrW2uLpfGNLYdyZ6TzWAY1",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Starry Nebula"
+    },
+    {
+      "trait_type": "Planet",
+      "value": "Exotic World"
+    },
+    {
+      "trait_type": "Companion",
+      "value": "Robotic Satellite"
+    },
+    {
+      "trait_type": "Special Feature",
+      "value": "Alien Artifact"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    }
+  ]
+}

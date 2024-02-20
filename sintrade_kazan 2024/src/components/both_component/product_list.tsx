@@ -4,12 +4,11 @@ import React, { useEffect, useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Grid } from "swiper/modules";
 import SwiperCore from "swiper";
-import { SwiperOptions } from "swiper/types";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/grid";
-import { Product, ProductListProps } from "@/src/app/types/landingTypes";
+import {ProductListProps } from "@/src/app/types/landingTypes";
 import "./both_products.scss";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,15 +31,8 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
         } else {
             slidesPerView = 1; // Для экранов меньше 768px
         }
-
         // Расчет общего количества продуктов, учитывая количество строк
-        let totalProducts;
-        if (slidesPerView === 4) {
-            totalProducts = products.length / 2; // Поскольку в каждом слайде 2 строки
-        } else {
-            totalProducts = products.length / 3; // Поскольку в каждом слайде 3 строки
-        }
-
+        let totalProducts =  products.length / 2;
         // Вычисление количества страниц
         const pages = Math.ceil(totalProducts / slidesPerView);
         setNumPages(pages);
@@ -110,30 +102,33 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
           }}
           // Адаптивные настройки
           breakpoints={{
-            1200: { // Для экранов шире 1200px
-              slidesPerView: 4,
+              1200: { // Для экранов шире 1200px
+                  slidesPerView: 4,
+                  slidesPerGroup: 2, // Adjust according to your needs
                   spaceBetween: 20,
                   grid: {
-                rows: 2,
-                    fill: "row",
+                      rows: 2,
+                      fill: "row",
+                  },
               },
-            },
-            768: { // Для экранов шире 768px
-              slidesPerView: 1,
+              768: { // Для экранов шире 768px
+                  slidesPerView: 1,
+                  slidesPerGroup: 1, // Ensure moving one slide at a time
                   spaceBetween: 20,
                   grid: {
-                rows: 2,
-                    fill: "row",
+                      rows: 2,
+                      fill: "row",
+                  },
               },
-            },
-            0: { // Для экранов меньше 768px
-              slidesPerView: 1,
+              0: { // Для экранов меньше 768px
+                  slidesPerView: 1,
+                  slidesPerGroup: 1, // Ensure moving one slide at a time
                   spaceBetween: 20,
                   grid: {
-                rows: 2,
-                    fill: "row",
+                      rows: 2,
+                      fill: "row",
+                  },
               },
-            },
           }}
       >
         {products.map((product) => (

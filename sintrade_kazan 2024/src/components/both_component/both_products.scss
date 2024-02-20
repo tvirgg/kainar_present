@@ -88,13 +88,11 @@
       }
     }
   }
-
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   padding: 10% 0px;
 }
-
 .service-block h2 {
   position: relative;
   font-size: 32px;
@@ -492,5 +490,17 @@
     background: #FFFFFF; /* Цвет фона */
     z-index: 100; /* Помещаем псевдоэлемент под кнопку */
     box-shadow: none; /* Отключаем тень для псевдоэлемента */
+  }
+}
+@media (max-width: 1110px) {
+  .service_block__sec{
+      display: flex;
+      flex-direction: column-reverse !important;
+    }
+}
+@media (max-width: 710px) {
+  .service_block__sec__img{
+    position: relative;
+    right: -30px;
   }
 }

@@ -91,7 +91,6 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
                 count: reducedCount
             };
         case 'CLEAR_CART':
-            // Очистка корзины
             return { ...state, items: [], count: 0 };
 
         case 'INCREMENT_ITEM_WEIGHT':

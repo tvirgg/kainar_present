@@ -1,7 +1,6 @@
 "use client";
 
 import React, {useContext, useEffect, useRef, useState} from 'react';
-import Image from 'next/image';
 import './both_products.scss';
 import products from '../../../data/products.json';
 import { v4 as uuidv4 } from 'uuid';
@@ -112,7 +111,7 @@ const Both_Component = () => {
                 </div>
               </div>
 
-              <div className="service-block">
+              <div className="service-block service_block__sec">
                 <div className="service-block--text">
                   <h2>ОПТИМИЗАЦИЯ ПРОМЫШЛЕННЫХ ПРОЦЕССОВ</h2>
                   <p>

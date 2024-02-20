@@ -14,7 +14,7 @@ const Landing_hero = () => (
       <p className="landing__intro-description">производство и поставка химреактивов</p>
     </div>
     <div className="landing__intro-images_main">
-       <Image className="landing__intro-image__main" src="/images/heroImage.png" alt="logo" width={300} height={200} />
+        <Image className="landing__intro-image__main" src="/images/heroImage.png" alt="logo" width={300} height={200} />
         <Image className="landing__intro-image--blur_main" src="/images/heroImage.png" alt="logo" width={300} height={200} />
     </div>
   </section>

@@ -1,6 +1,5 @@
 "use client";
 import React, {useState, useEffect, useLayoutEffect} from 'react';
-import { useRouter } from 'next/router';
 import products from '../../../../data/products.json';
 import Image from "next/image";
 import ProductCalculator from "@/src/app/basket/product_calculator/product_calculator";

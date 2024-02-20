@@ -24,7 +24,7 @@ const Contacts = () => (
           <img className="contacts__group--title-icon-1" src="/icons/phone.svg" alt="" />
         </div>
         <div className="contacts__group--dir">
-          <p>Директор Валеева Иля Фагитовна</p>
+          <p>Директор Валеева Лия Фаритовна</p>
           <div className="contacts__bottom-arrow contacts__number">
             +7 (950) 318 40 59
           </div>
@@ -73,7 +73,7 @@ const Contacts = () => (
           <span className="contacts__office">Офис, склад</span>
         </div>
       </div>
-      <button className="contacts__btn-download black-btn">СКАЧАТЬ РЕКВИЗИТЫ</button>
+      <a href="/pr_list.pdf" download="pr_list.pdf" className="contacts__btn-download black-btn">СКАЧАТЬ РЕКВИЗИТЫ</a>
     </div>
   </section>
 );

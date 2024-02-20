@@ -40,7 +40,7 @@ const RequestForm = forwardRef<HTMLDivElement, RequestFormProps>((props, ref) =>
             phone: '',
             comments: ''
         });
-
+    const [commoneror, setcommoneror] = useState<string>('');
         const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
             setFormData({ ...formData, [e.target.name]: e.target.value });
             // Сразу же очищаем ошибки для поля
@@ -74,21 +74,42 @@ const RequestForm = forwardRef<HTMLDivElement, RequestFormProps>((props, ref) =>
             return errors;
         };
 
-        const handleSubmit = (e: FormEvent) => {
-            e.preventDefault();
-            const errors = validateForm();
-            if (Object.values(errors).some(error => error !== '')) {
-                setFormErrors(errors);
-                return;
+    const handleSubmit = async (e: FormEvent) => {
+        e.preventDefault();
+        const errors = validateForm();
+        if (Object.values(errors).some(error => error !== '')) {
+            setFormErrors(errors);
+            return;
+        }
+        let data = {
+            companyName: formData.fullName,
+            email: formData.email,
+            message: formData
+        }
+        async function sendEmail(data: any) {
+            const response = await fetch('/api/sendemail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
+            if (response.status === 200) {
+                setcommoneror('');
+                props.closeForm();
+            } else if (response.status === 500) {
+                setcommoneror('Произошла ошибка при отправке запроса');
+                console.error('Произошла ошибка при отправке запроса'); // Если сервер вернул статус 500, выводим сообщение об ошибке
             }
-            console.log('Form Data Submitted: ', formData);
-        };
+        }
+        sendEmail(data);
+    };
         interface ChildProps {
             closeForm: () => void;
         }
     return (
       <div className="form_back request-form--hidden"  ref={ref}>
-          <div className="request-form">
+          <form onSubmit={handleSubmit} className="request-form">
               <div className="request-form__header">
                   <button className="request-form__close-button" onClick={props.closeForm}>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +145,8 @@ const RequestForm = forwardRef<HTMLDivElement, RequestFormProps>((props, ref) =>
                           Отправить
                       </button>
                   </div>
-          </div>
+              {commoneror && <div className="form-error">{commoneror}</div>}
+          </form>
       </div>
   );
 });

@@ -150,7 +150,8 @@ const Basket = () => {
                     </div>
                 </div>
             )}
-            <CheckoutForm/>
+            {cartState.items.length > 0 && (<CheckoutForm/>)
+            }
         </div>
     );
 };
